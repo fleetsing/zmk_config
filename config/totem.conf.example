@@ -1,0 +1,2 @@
+# Place your real Totem config options here.
+# Keep low-level feature flags in this file rather than pushing them into the keymap.

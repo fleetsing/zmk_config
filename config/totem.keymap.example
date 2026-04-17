@@ -1,0 +1,8 @@
+/*
+ * Place your real Totem keymap here.
+ *
+ * Recommended policy:
+ * - keep layers, combos, conditional layers, and visually edited macros here
+ * - keep advanced reusable logic in ../zmk_modules when possible
+ * - avoid heavy preprocessor aliasing if you want smooth Keymap Editor round-tripping
+ */

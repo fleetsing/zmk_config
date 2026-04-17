@@ -1,0 +1,6 @@
+# Minimal starting point.
+# Add parse_config and draw_config options here as your layout grows.
+
+parse_config:
+  # Example: if you later adopt locale-prefixed keycodes, add prefixes here.
+  zmk_remove_keycode_prefix: []

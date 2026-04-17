@@ -1,0 +1,4 @@
+# Keep repo-local overrides minimal.
+# Project-scoped .codex files load only when the repo is trusted.
+
+project_doc_max_bytes = 65536

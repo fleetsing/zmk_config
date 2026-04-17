@@ -1,0 +1,28 @@
+manifest:
+  remotes:
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
+    - name: bildermankawasaki
+      url-base: https://github.com/bildermankawasaki
+    # Add your own GitHub username or organization here if you split custom code
+    # into a separate ZMK module repository.
+    # - name: yourname
+    #   url-base: https://github.com/yourname
+
+  projects:
+    - name: zmk
+      remote: zmkfirmware
+      revision: v0.3
+      import: app/west.yml
+
+    - name: zmk-keyboard-totem
+      remote: bildermankawasaki
+      revision: main
+
+    # Optional custom module repo:
+    # - name: zmk-modules
+    #   remote: yourname
+    #   revision: <tag-or-sha>
+
+  self:
+    path: config
