@@ -1,0 +1,3 @@
+layout: {zmk_keyboard: totem}
+layers:
+  base: [Q, W, F, P, G, J, L, U, Y, ;, A, R, S, T, D, H, N, E, I, O, Q, Z, X, C, V, B, K, M, ',', ., /, \, DEL, TAB, SPACE, RET, ESC, BSPC]
