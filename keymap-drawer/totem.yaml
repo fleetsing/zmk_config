@@ -23,14 +23,14 @@ layers:
   - O
   - Q
   - Z
-  - {t: X, h: '&meh'}
-  - C
+  - X
+  - {t: C, h: '&meh'}
   - {t: V, h: '&hyper'}
   - B
   - K
   - {t: M, h: '&hyper'}
-  - ','
-  - {t: ., h: '&meh'}
+  - {t: ',', h: '&meh'}
+  - .
   - /
   - \
   - DEL
