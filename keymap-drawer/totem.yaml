@@ -1,3 +1,41 @@
 layout: {zmk_keyboard: totem}
 layers:
-  base: [Q, W, F, P, G, J, L, U, Y, ;, A, R, S, T, D, H, N, E, I, O, Q, Z, X, C, V, B, K, M, ',', ., /, \, DEL, TAB, SPACE, RET, ESC, BSPC]
+  base:
+  - Q
+  - W
+  - F
+  - P
+  - G
+  - J
+  - L
+  - U
+  - Y
+  - ;
+  - A
+  - {t: R, h: LALT}
+  - {t: S, h: LCTRL}
+  - {t: T, h: LGUI}
+  - D
+  - H
+  - {t: N, h: RGUI}
+  - {t: E, h: RCTRL}
+  - {t: I, h: RALT}
+  - O
+  - Q
+  - Z
+  - {t: X, h: '&meh'}
+  - C
+  - {t: V, h: '&hyper'}
+  - B
+  - K
+  - {t: M, h: '&hyper'}
+  - ','
+  - {t: ., h: '&meh'}
+  - /
+  - \
+  - DEL
+  - TAB
+  - SPACE
+  - RET
+  - ESC
+  - BSPC
