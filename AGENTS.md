@@ -4,7 +4,8 @@
 - `build.yaml`
 - `config/west.yml`
 - `config/totem.keymap`
-- `config/totem.conf`
+- `config/totem_left.conf`
+- `config/totem_right.conf`
 - `config/totem.json`
 - `docs/zmk-context.md`
 
@@ -18,6 +19,7 @@ If this repo is part of the local multi-repo workspace, read `../zmk_workspace/d
 - Do not upgrade ZMK, module refs, or the pinned reusable build workflow unless explicitly asked.
 - Keep diagram paths stable unless there is a good reason to change them.
 - Update `docs/zmk-context.md` whenever repo-local build conventions, pins, or commands change.
+- Prefer `../zmk_workspace/scripts/build-local-firmware.sh` for local verification instead of creating a west workspace inside this repo.
 
 ## Verification expectations
 - Explain which files changed and why.

@@ -7,7 +7,8 @@ This repository is the buildable ZMK user-config repo for the Totem keyboard.
 - `build.yaml`
 - `config/west.yml`
 - `config/totem.keymap`
-- `config/totem.conf`
+- `config/totem_left.conf`
+- `config/totem_right.conf`
 - `config/totem.json`
 - GitHub Actions workflows for firmware builds and keymap drawing
 
@@ -28,6 +29,17 @@ Those belong in sibling repos:
 - firmware build: pinned reusable ZMK GitHub Actions workflow
 - visual editor: Nick Coutsos' Keymap Editor
 - diagrams: `caksoylar/keymap-drawer`
+
+## Local verification
+
+When this repo is part of the full local workspace, run local firmware builds from `../zmk_workspace`:
+
+```bash
+cd ../zmk_workspace
+./scripts/build-local-firmware.sh all
+```
+
+That keeps disposable west state out of this repository.
 
 ## Note
 

@@ -5,49 +5,39 @@ description: Use this when a task needs a local ZMK build, especially for CI deb
 
 ## Purpose
 
-Run or propose the correct local build commands against the pinned upstream ZMK checkout.
+Run or propose the correct local build commands against the pinned config manifest without turning this repo into a west workspace.
 
 ## Assumptions
 
-- Upstream checkout lives at `~/zmk/zmk`
+- Main agent repo lives at `~/zmk/zmk_workspace`
 - User config repo lives at `~/zmk/zmk_config`
-- Optional module repo lives at `~/zmk/zmk_modules`
+- Upstream checkout lives at `~/zmk/zmk`
+- Optional module repos live under `~/zmk/zmk_modules`
 
 ## Canonical commands
 
-### Prepare local checkout
+### Build both halves
 ```bash
-cd ~/zmk/zmk
-python3 -m venv .venv
-source .venv/bin/activate
-pip install west
-west init -l app/
-west update
-west zephyr-export
-west packages pip --install
+cd ~/zmk/zmk_workspace
+./scripts/build-local-firmware.sh all
 ```
 
-### Build Totem left
+### Build one half
 ```bash
-cd ~/zmk/zmk/app
-west build -d build/totem-left -b seeeduino_xiao_ble -- \
-  -DSHIELD=totem_left \
-  -DZMK_CONFIG="$HOME/zmk/zmk_config/config"
+cd ~/zmk/zmk_workspace
+./scripts/build-local-firmware.sh left
+./scripts/build-local-firmware.sh right
 ```
 
-### Build Totem left with extra modules
+### Reuse an existing fetched disposable workspace
 ```bash
-cd ~/zmk/zmk/app
-west build -d build/totem-left -b seeeduino_xiao_ble -- \
-  -DSHIELD=totem_left \
-  -DZMK_CONFIG="$HOME/zmk/zmk_config/config" \
-  -DZMK_EXTRA_MODULES="$HOME/zmk/zmk_modules"
+cd ~/zmk/zmk_workspace
+ZMK_SKIP_UPDATE=1 ./scripts/build-local-firmware.sh all
 ```
-
-Repeat for the right half by replacing `totem_left` with `totem_right`.
 
 ## Notes
 
 - Do not change version pins unless the task explicitly asks for an upgrade or the build evidence proves a mismatch.
 - When a build breaks because of reusable advanced logic, prefer moving that logic into a module repo under `~/zmk/zmk_modules`.
 - In the full multi-repo workspace, `~/zmk/zmk_workspace` is the main agent entrypoint even though the build inputs live here.
+- Prefer the disposable helper over running `west init` inside `~/zmk/zmk_config`.

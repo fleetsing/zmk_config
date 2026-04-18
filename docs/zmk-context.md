@@ -25,7 +25,8 @@ This repo is the day-to-day buildable ZMK user-config repo for the Totem keyboar
 - `build.yaml`
 - `config/west.yml`
 - `config/totem.keymap`
-- `config/totem.conf`
+- `config/totem_left.conf`
+- `config/totem_right.conf`
 - `config/totem.json`
 - `.github/workflows/build.yml`
 - `.github/workflows/draw-keymaps.yml`
@@ -40,11 +41,11 @@ This repo is the day-to-day buildable ZMK user-config repo for the Totem keyboar
 
 ## Local build reminder
 
-Use the sibling upstream checkout:
+Use the sibling workspace helper:
 
 ```bash
-cd ~/zmk/zmk/app
-west build -d build/totem-left -b seeeduino_xiao_ble -- \
-  -DSHIELD=totem_left \
-  -DZMK_CONFIG="$HOME/zmk/zmk_config/config"
+cd ~/zmk/zmk_workspace
+./scripts/build-local-firmware.sh all
 ```
+
+That helper mirrors this repo into a disposable west workspace under `/tmp/zmk-local-build` by default, so local verification does not leave `.west/` state behind here.
