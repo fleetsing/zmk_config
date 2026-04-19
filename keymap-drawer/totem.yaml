@@ -156,8 +156,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Num: ['', '', '', '', '', '', '7', '8', '9', '', LEFT SHIFT, LEFT ALT, LEFT CONTROL, LEFT GUI, '', BSPC, '4', '5', '6', '0', '', '', '', '', '', '', '', '1', '2',
-    '3', '', '', '', '', '', '', '0', '']
+  Num: ['', '', '', '', '', '', '7', '8', '9', '', LEFT SHIFT, LEFT ALT, LEFT CONTROL, LEFT GUI, '', BSPC, '4', '5', '6', '0', '', '', '', Alt+Ctl+LEFT SHIFT, Alt+Ctl+Gui+LEFT
+      SHIFT, '', '', '1', '2', '3', '', '', '', '', '', '', '0', '']
   'Num ':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -197,3 +197,122 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  Fun:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F7
+  - F8
+  - F9
+  - F12
+  - LEFT SHIFT
+  - LEFT ALT
+  - LEFT CONTROL
+  - LEFT GUI
+  - ''
+  - ''
+  - F4
+  - F5
+  - F6
+  - F11
+  - ''
+  - ''
+  - ''
+  - {t: SCROLLLOCK, h: '&meh'}
+  - {t: KP NUMLOCK, h: '&hyper'}
+  - ''
+  - ''
+  - F1
+  - F2
+  - F3
+  - F10
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  'Fun ':
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT GUI
+  - LEFT CONTROL
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  Media: ['', BRIGHTNESS DEC, '', BRIGHTNESS INC, '', '', '', '', '', '', '', VOLUME DOWN, MUTE, VOLUME UP, '', '', '', '', '', '', '', '', PREVIOUS, PLAY PAUSE,
+    NEXT, '', '', '', '', '', '', '', '', '', '', '', '', '']
+  Board:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - OUT BLE
+  - OUT USB
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: BT DISC, h: '0'}
+  - {t: BT DISC, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT DISC, h: '3'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
