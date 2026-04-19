@@ -235,4 +235,23 @@
             label = "Board";
         };
     };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        pc_nav_condition {
+            if-layers = <1 2>;
+            then-layer = <3>;
+        };
+
+        pc_num_condition {
+            if-layers = <1 4>;
+            then-layer = <5>;
+        };
+
+        pc_fun_layer {
+            if-layers = <1 6>;
+            then-layer = <7>;
+        };
+    };
 };
