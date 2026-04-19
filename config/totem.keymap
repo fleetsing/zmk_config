@@ -123,13 +123,70 @@
     keymap {
         compatible = "zmk,keymap";
 
-        base_layer {
+        macos_layer {
             bindings = <
        &kp X              &kp G        &kp D         &kp F        &kp B        &kp Q       &kp H          &kp U                  &kp O        &kp Z
        &hml LEFT_SHIFT R  &hml LALT S  &hml LCTRL T  &hml LGUI N  &kp K        &kp J       &hmr RGUI L    &hmr RCTRL E           &hmr RALT A  &hmr RIGHT_SHIFT I
 &kp W  &kp SQT            &kp C        &lmeh 0 M     &lhyp 0 P    &kp V        &kp PERIOD  &rhyp 0 COMMA  &rmeh 0 LG(SEMICOLON)  &kp SQT      &kp LEFT_BRACKET    &kp Y
                                        &kp DEL       &kp TAB      &kp SPACE    &kp RET     &kp ESC        &kp BSPC
             >;
+
+            label = "MacOS";
+        };
+
+        pc_layer {
+            bindings = <
+        &trans  &trans  &trans           &trans               &trans    &trans  &trans                &trans            &trans  &trans
+        &trans  &trans  &hml LEFT_GUI T  &hml LEFT_CONTROL N  &trans    &trans  &hmr RIGHT_CONTROL L  &hmr RIGHT_GUI E  &trans  &trans
+&trans  &trans  &trans  &trans           &trans               &trans    &trans  &trans                &trans            &trans  &trans  &trans
+                        &trans           &trans               &trans    &trans  &trans                &trans
+            >;
+
+            label = "PC";
+        };
+
+        nav_layer {
+            bindings = <
+       &none                &kp LG(K_CUT)      &kp LG(K_COPY)         &kp LG(K_PASTE)    &none              &none     &kp PG_DN  &kp PG_UP  &kp INSERT  &none
+       &hml LEFT_SHIFT F16  &hml LEFT_ALT F15  &hml LEFT_CONTROL F14  &hml LEFT_GUI F13  &kp PRINTSCREEN    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT   &none
+&none  &none                &none              &lmeh 0 K_REDO         &lhyp 0 K_UNDO     &none              &none     &kp END    &kp HOME   &none       &none  &none
+                                               &none                  &none              &none              &none     &none      &none
+            >;
+
+            label = "Nav";
+        };
+
+        pc_nav_layer {
+            bindings = <
+        &trans  &trans  &trans             &trans                 &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &hml LEFT_GUI F14  &hml LEFT_CONTROL F13  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans             &trans                 &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans             &trans                 &trans    &trans  &trans  &trans
+            >;
+
+            label = "Nav ";
+        };
+
+        num_layer {
+            bindings = <
+       &none           &none         &none             &none         &none    &none     &kp N7  &kp N8  &kp N9  &none
+       &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_GUI  &none    &kp BSPC  &kp N4  &kp N5  &kp N6  &kp N0
+&none  &none           &none         &none             &none         &none    &none     &kp N1  &kp N2  &kp N3  &none   &none
+                                     &none             &none         &none    &none     &kp N0  &none
+            >;
+
+            label = "Num";
+        };
+
+        pc_num_layer {
+            bindings = <
+        &trans  &trans  &trans        &trans            &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &kp LEFT_GUI  &kp LEFT_CONTROL  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans        &trans            &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans        &trans            &trans    &trans  &trans  &trans
+            >;
+
+            label = "Num ";
         };
     };
 };
