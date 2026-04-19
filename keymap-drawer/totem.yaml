@@ -1,38 +1,38 @@
 layout: {zmk_keyboard: totem}
 layers:
   base:
-  - Q
-  - W
-  - F
-  - P
-  - G
-  - J
-  - L
-  - U
-  - Y
-  - ;
-  - A
-  - {t: R, h: LALT}
-  - {t: S, h: LCTRL}
-  - {t: T, h: LGUI}
-  - D
-  - H
-  - {t: N, h: RGUI}
-  - {t: E, h: RCTRL}
-  - {t: I, h: RALT}
-  - O
-  - Q
-  - Z
   - X
-  - {t: C, h: '&meh'}
-  - {t: V, h: '&hyper'}
+  - G
+  - D
+  - F
   - B
+  - Q
+  - H
+  - U
+  - O
+  - Z
+  - {t: R, h: LEFT SHIFT}
+  - {t: S, h: LALT}
+  - {t: T, h: LCTRL}
+  - {t: N, h: LGUI}
   - K
-  - {t: M, h: '&hyper'}
-  - {t: ',', h: '&meh'}
+  - J
+  - {t: L, h: RGUI}
+  - {t: E, h: RCTRL}
+  - {t: A, h: RALT}
+  - {t: I, h: RIGHT SHIFT}
+  - W
+  - ''''
+  - C
+  - {t: M, h: '&meh'}
+  - {t: P, h: '&hyper'}
+  - V
   - .
-  - /
-  - \
+  - {t: ',', h: '&hyper'}
+  - {t: Gui+;, h: '&meh'}
+  - ''''
+  - '['
+  - Y
   - DEL
   - TAB
   - SPACE
