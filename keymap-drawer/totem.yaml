@@ -33,12 +33,12 @@ layers:
   - ''''
   - '['
   - Y
-  - DEL
-  - TAB
-  - SPACE
-  - RET
-  - ESC
-  - BSPC
+  - {t: ESCAPE, h: Fun}
+  - {t: SPACE, h: Nav}
+  - {t: F24, h: Num}
+  - {t: F24, h: Media}
+  - {t: BACKSPACE, h: Nav}
+  - {t: ENTER, h: Media}
   PC:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -112,10 +112,10 @@ layers:
   - ''
   - ''
   - ''
+  - {type: held}
   - ''
   - ''
-  - ''
-  - ''
+  - DEL
   - ''
   'Nav ':
   - {t: ▽, type: trans}
@@ -151,13 +151,50 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  Num: ['', '', '', '', '', '', '7', '8', '9', '', LEFT SHIFT, LEFT ALT, LEFT CONTROL, LEFT GUI, '', BSPC, '4', '5', '6', '0', '', '', '', Alt+Ctl+LEFT SHIFT, Alt+Ctl+Gui+LEFT
-      SHIFT, '', '', '1', '2', '3', '', '', '', '', '', '', '0', '']
+  Num:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '7'
+  - '8'
+  - '9'
+  - ''
+  - LEFT SHIFT
+  - LEFT ALT
+  - LEFT CONTROL
+  - LEFT GUI
+  - ''
+  - ''
+  - '4'
+  - '5'
+  - '6'
+  - '0'
+  - ''
+  - ''
+  - ''
+  - Alt+Ctl+LEFT SHIFT
+  - Alt+Ctl+Gui+LEFT SHIFT
+  - ''
+  - ''
+  - '1'
+  - '2'
+  - '3'
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - '0'
+  - BACKSPACE
+  - ''
   'Num ':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -193,7 +230,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -230,7 +267,7 @@ layers:
   - F3
   - F10
   - ''
-  - ''
+  - {type: held}
   - ''
   - ''
   - ''
@@ -269,29 +306,66 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  Media: ['', BRIGHTNESS DEC, '', BRIGHTNESS INC, '', '', '', '', '', '', '', VOLUME DOWN, MUTE, VOLUME UP, '', '', '', '', '', '', '', '', PREVIOUS, PLAY PAUSE,
-    NEXT, '', '', '', '', '', '', '', '', '', '', '', '', '']
+  Media:
+  - ''
+  - BRIGHTNESS DEC
+  - ''
+  - BRIGHTNESS INC
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - VOLUME DOWN
+  - MUTE
+  - VOLUME UP
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - PREVIOUS
+  - PLAY PAUSE
+  - NEXT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ''
+  - ''
   Board:
   - ''
   - ''
-  - ''
-  - ''
+  - OUT USB
+  - OUT BLE
   - ''
   - ''
   - OUT BLE
   - OUT USB
   - ''
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: BT, h: '3'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '0'}
   - ''
   - ''
   - {t: BT, h: '0'}
@@ -299,10 +373,10 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - ''
-  - ''
-  - ''
-  - ''
-  - ''
+  - {t: BT DISC, h: '3'}
+  - {t: BT DISC, h: '2'}
+  - {t: BT DISC, h: '1'}
+  - {t: BT DISC, h: '0'}
   - ''
   - ''
   - {t: BT DISC, h: '0'}
@@ -316,3 +390,6 @@ layers:
   - ''
   - ''
   - ''
+  Mouse: ['', '&msc SCRL_LEFT', '', '&msc SCRL_RIGHT', '', '', '', '', '', '', '', '&mmv MOVE_LEFT', '&mmv MOVE_UP', '&mmv MOVE_RIGHT', '&msc SCRL_UP', '&msc SCRL_UP',
+    '&mkp MB1', '&mkp MB2', '&mkp MB3', '', '', '', '', '&mmv MOVE_DOWN', '', '&msc SCRL_DOWN', '&msc SCRL_DOWN', '&mkp MB4', '&mkp MB5', '', '', '', '', '', '',
+    '', '', '']
