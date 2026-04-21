@@ -26,6 +26,17 @@ This repo is the day-to-day buildable ZMK user-config repo for the Totem keyboar
 - The logical matrix order in `config/totem.keymap` is important for positional hold-tap features such as home-row mods.
 - The current default host OS is macOS, so modifier choices should favor macOS shortcut ergonomics unless a task explicitly targets a separate PC config.
 
+## Current keymap shape
+
+- `config/totem.keymap` currently defines ten layers:
+  `MacOS`, `PC`, `Nav`, `Nav `, `Num`, `Num `, `Fun`, `Fun `, `Media`, and `Board`.
+- `PC` is a transparent base overlay that swaps the relevant GUI and Control home-row holds for PC use.
+- `Nav `, `Num `, and `Fun ` are transparent PC-specific overlays that are activated through conditional layers when `PC` is combined with `Nav`, `Num`, or `Fun`.
+- The keymap keeps its custom behavior definitions inline today: `Meh` and `Hyper` macros plus six positional hold-tap helpers for left/right home-row mods and left/right bottom-row `Meh`/`Hyper`.
+- All of those hold-tap helpers currently share the same tuning style: `balanced`, `quick-tap-ms = 175`, `require-prior-idle-ms = 150`, `retro-tap`, and `hold-trigger-on-release`.
+- `config/totem_left.conf` now carries the central-side BLE battery reporting settings used for host-side monitoring apps in addition to disabling USB logging.
+- `config/totem_right.conf` disables USB and the USB device stack for the peripheral half.
+
 ## Editable files in this repo
 
 - `build.yaml`
@@ -37,6 +48,7 @@ This repo is the day-to-day buildable ZMK user-config repo for the Totem keyboar
 - `.github/workflows/build.yml`
 - `.github/workflows/draw-keymaps.yml`
 - `keymap_drawer.config.yaml`
+- `docs/battery-monitoring.md`
 
 ## Policy
 
@@ -44,6 +56,7 @@ This repo is the day-to-day buildable ZMK user-config repo for the Totem keyboar
 - Keep layout metadata in `config/totem.json`.
 - Prefer GitHub Actions for routine firmware builds.
 - Keep reusable advanced logic out of this repo when it belongs in a module.
+- Keep the transparent PC overlay pattern readable instead of hiding it behind preprocessor aliases.
 
 ## Local build reminder
 
@@ -53,9 +66,11 @@ Use the sibling workspace helper:
 cd ~/zmk/zmk_workspace
 ./scripts/build-local-firmware.sh all
 ZMK_SKIP_UPDATE=1 ZMK_SKIP_PIP=1 ./scripts/build-local-firmware.sh all
+ZMK_ARTIFACT_DIR=$PWD/firmware ./scripts/build-local-firmware.sh all
 ```
 
-That helper mirrors this repo into a disposable west workspace under `/tmp/zmk-local-build` by default, so local verification does not leave `.west/` state behind here.
+That helper mirrors this repo into a disposable west workspace under `${TMPDIR:-/tmp}/zmk-local-build` by default, so local verification does not leave `.west/` state behind here.
+It also copies the finished UF2 files into `~/zmk/zmk_workspace/artifacts/firmware/` by default so the flashing artifacts stay easy to reach.
 
 In restricted sessions, the first helper run needs network access so west can fetch the pinned dependencies into that disposable workspace. After the workspace has already been populated, `ZMK_SKIP_UPDATE=1` can be used for rebuilds without refetching.
 If the disposable virtualenv already has the required Python packages installed, `ZMK_SKIP_PIP=1` can also be used to skip pip refreshes in offline or network-restricted sessions.

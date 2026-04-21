@@ -1,6 +1,6 @@
-# Minimal starting point.
-# Add parse_config and draw_config options here as your layout grows.
+# Intentionally minimal for the current Totem layout.
+# Add parse_config or draw_config options only when the live keymap needs them.
 
 parse_config:
-  # Example: if you later adopt locale-prefixed keycodes, add prefixes here.
+  # Keep parser overrides explicit; the current keymap renders cleanly with defaults.
   zmk_remove_keycode_prefix: []

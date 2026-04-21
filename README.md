@@ -30,6 +30,13 @@ Those belong in sibling repos:
 - visual editor: Nick Coutsos' Keymap Editor
 - diagrams: `caksoylar/keymap-drawer`
 
+## Current keymap shape
+
+- `config/totem.keymap` is the maintained editor-safe source for the live Totem layout.
+- The current layout defines ten layers: `MacOS`, `PC`, `Nav`, `Nav `, `Num`, `Num `, `Fun`, `Fun `, `Media`, and `Board`.
+- `PC` plus `Nav `, `Num `, and `Fun ` are transparent overlays used to swap the relevant GUI and Control holds for PC usage without duplicating whole layers.
+- Custom `Meh` and `Hyper` macros and the left/right positional hold-tap helpers are currently defined inline in the keymap rather than split into a separate module.
+
 ## Local verification
 
 When this repo is part of the full local workspace, run local firmware builds from `../zmk_workspace`:
@@ -39,7 +46,11 @@ cd ../zmk_workspace
 ./scripts/build-local-firmware.sh all
 ```
 
-That keeps disposable west state out of this repository.
+That keeps disposable west state out of this repository and copies the flashable UF2 files into `../zmk_workspace/artifacts/firmware/`.
+
+## Host-side status apps
+
+- Battery monitoring notes for the current macOS setup live in [docs/battery-monitoring.md](/Users/jarnolouhelainen/Projects/keyboards/zmk/zmk_config/docs/battery-monitoring.md).
 
 ## Note
 

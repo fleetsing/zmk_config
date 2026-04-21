@@ -20,6 +20,7 @@ If this repo is part of the local multi-repo workspace, read `../zmk_workspace/d
 - Keep diagram paths stable unless there is a good reason to change them.
 - Update `docs/zmk-context.md` whenever repo-local build conventions, pins, or commands change.
 - Prefer `../zmk_workspace/scripts/build-local-firmware.sh` for local verification instead of creating a west workspace inside this repo.
+- Expect that helper to copy the finished UF2 files into `../zmk_workspace/artifacts/firmware/` by default.
 
 ## Verification expectations
 - Explain which files changed and why.
