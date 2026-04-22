@@ -19,7 +19,7 @@ manifest:
 
     - name: zmk-keyboard-totem
       remote: bildermankawasaki
-      revision: main
+      revision: b10c4c4903f19d4680bc3b443482372c879ce1f5
 
     - name: zmk-auto-layer
       remote: urob

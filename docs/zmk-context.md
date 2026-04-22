@@ -14,7 +14,7 @@ This repo is the day-to-day buildable ZMK user-config repo for the Totem keyboar
 
 - ZMK ref: `v0.3`
 - GitHub build workflow pin: `v0.3`
-- Totem module repo: `bildermankawasaki/zmk-keyboard-TOTEM`
+- Totem module repo: `bildermankawasaki/zmk-keyboard-TOTEM` at `b10c4c4903f19d4680bc3b443482372c879ce1f5`
 - Auto-layer module repo: `urob/zmk-auto-layer` at `v0.3`
 - Board: `seeeduino_xiao_ble`
 - Shields:
