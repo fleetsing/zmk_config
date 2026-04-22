@@ -426,11 +426,13 @@
 
         macos_layer {
             bindings = <
-       &kp X              &kp G        &kp D         &kp F        &kp B        &kp Q       &kp H          &kp U              &kp O        &kp Z
-       &hml LEFT_SHIFT R  &hml LALT S  &hml LCTRL T  &hml LGUI N  &kp K        &kp J       &hmr RGUI L    &hmr RCTRL E       &hmr RALT A  &hmr RIGHT_SHIFT I
-&kp W  &kp SQT            &kp C        &lmeh 0 M     &lhyp 0 P    &kp V        &kp PERIOD  &rhyp 0 COMMA  &rmeh 0 SEMICOLON  &kp SQT      &kp LEFT_BRACKET    &kp Y
-                                       &lt 8 ESCAPE  &lt 2 SPACE  &lt 5 F24    &lt 10 F24  &ss            &lt 11 ENTER
+       &kp ESCAPE         &kp G        &lmeh 0 D     &lhyp 0 F    &kp B        &kp Z                    &rhyp 0 H            &rmeh 0 U      &kp O        &kp Q
+       &hml LEFT_SHIFT R  &hml LALT S  &hml LCTRL T  &hml LGUI N  &kp K        &kp J                    &hmr RGUI L          &hmr RCTRL E   &hmr RALT A  &hmr RIGHT_SHIFT I
+&kp W  &kp X              &kp C        &kp M         &kp P        &kp V        &mt LS(NUMBER_1) PERIOD  &mt LS(MINUS) COMMA  &kp SEMICOLON  &kp SQT      &kp LEFT_BRACKET    &kp Y
+                                       &lt 8 ESCAPE  &lt 2 SPACE  &lt 5 F24    &lt 10 F24               &ss                  &lt 11 ENTER
             >;
+
+            label = "MacOS";
         };
 
         pc_layer {
@@ -444,38 +446,46 @@
 
         nav_layer {
             bindings = <
-       &none                &kp LG(K_CUT)      &kp LG(K_COPY)         &kp LG(K_PASTE)    &none              &none     &kp PG_DN      &kp PG_UP   &kp INSERT  &none
+       &none                &none              &lmeh 0 LG(LS(Z))      &lhyp 0 LG(Z)      &none              &none     &kp PG_DN      &kp PG_UP   &kp INSERT  &none
        &hml LEFT_SHIFT F16  &hml LEFT_ALT F15  &hml LEFT_CONTROL F14  &hml LEFT_GUI F13  &kp PRINTSCREEN    &kp LEFT  &kp DOWN       &kp UP      &kp RIGHT   &none
-&none  &none                &none              &lmeh 0 K_REDO         &lhyp 0 K_UNDO     &none              &none     &kp END        &kp HOME    &none       &none  &none
+&none  &none                &kp LG(X)          &kp LG(C)              &kp LG(V)          &none              &none     &kp END        &kp HOME    &none       &none  &none
                                                &kp LS(TAB)            &none              &kp TAB            &none     &kp BACKSPACE  &kp DELETE
             >;
+
+            label = "Nav";
         };
 
         pc_nav_layer {
             bindings = <
-        &trans  &trans  &trans             &trans                 &trans    &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &hml LEFT_GUI F14  &hml LEFT_CONTROL F13  &trans    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans             &trans                 &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans             &trans                 &trans    &trans  &trans  &trans
+        &trans  &trans     &kp LC(LS(X))      &kp LC(X)              &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans     &hml LEFT_GUI F14  &hml LEFT_CONTROL F13  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp LC(X)  &kp LC(C)          &kp LC(V)              &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans             &trans                 &trans    &trans  &trans  &trans
             >;
+
+            label = "Nav ";
         };
 
         autonav_layer {
             bindings = <
-        &trans             &trans           &trans               &trans           &trans     &trans          &trans          &trans        &trans           &trans
+        &trans             &trans           &mehht 0 0           &hypht 0 0       &trans     &trans          &trans          &trans        &trans           &trans
         &mht LEFT_SHIFT 0  &mht LEFT_ALT 0  &mht LEFT_CONTROL 0  &mht LEFT_GUI 0  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &trans             &trans           &mehht 0 0           &hypht 0 0       &trans     &trans          &trans          &trans        &trans           &trans  &trans
+&trans  &trans             &trans           &trans               &trans           &trans     &trans          &trans          &trans        &trans           &trans  &trans
                                             &kp LS(TAB)          &trans           &kp TAB    &trans          &kp BACKSPACE   &kp DELETE
             >;
+
+            label = "AutoNav";
         };
 
         num_layer {
             bindings = <
-       &none           &none         &none                   &none                       &none    &none   &kp N7         &kp N8      &kp N9  &none
+       &none           &none         &kp LA(LC(LEFT_SHIFT))  &kp LA(LC(LG(LEFT_SHIFT)))  &none    &none   &kp N7         &kp N8      &kp N9  &none
        &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL        &kp LEFT_GUI                &none    &none   &kp N4         &kp N5      &kp N6  &kp N0
-&none  &none           &none         &kp LA(LC(LEFT_SHIFT))  &kp LA(LC(LG(LEFT_SHIFT)))  &none    &none   &kp N1         &kp N2      &kp N3  &none   &none
+&none  &none           &none         &none                   &none                       &none    &none   &kp N1         &kp N2      &kp N3  &none   &none
                                      &none                   &none                       &none    &kp N0  &kp BACKSPACE  &kp DELETE
             >;
+
+            label = "Num";
         };
 
         pc_num_layer {
@@ -489,20 +499,24 @@
 
         autonum_layer {
             bindings = <
-        &trans             &trans           &trans               &trans           &trans    &trans  &kp N7         &kp N8      &kp N9  &trans
+        &trans             &trans           &mehht 0 0           &hypht 0 0       &trans    &trans  &kp N7         &kp N8      &kp N9  &trans
         &mht LEFT_SHIFT 0  &mht LEFT_ALT 0  &mht LEFT_CONTROL 0  &mht LEFT_GUI 0  &trans    &trans  &kp N4         &kp N5      &kp N6  &kp N0
-&trans  &trans             &trans           &mehht 0 0           &hypht 0 0       &trans    &trans  &kp N1         &kp N2      &kp N3  &trans  &trans
+&trans  &trans             &trans           &trans               &trans           &trans    &trans  &kp N1         &kp N2      &kp N3  &trans  &trans
                                             &trans               &trans           &trans    &kp N0  &kp BACKSPACE  &kp DELETE
             >;
+
+            label = "AutoNum";
         };
 
         fun_layer {
             bindings = <
-       &none           &none         &none               &none               &none    &none  &kp F7  &kp F8  &kp F9  &kp F12
+       &none           &none         &lmeh 0 SCROLLLOCK  &lhyp 0 KP_NUMLOCK  &none    &none  &kp F7  &kp F8  &kp F9  &kp F12
        &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL    &kp LEFT_GUI        &none    &none  &kp F4  &kp F5  &kp F6  &kp F11
-&none  &none           &none         &lmeh 0 SCROLLLOCK  &lhyp 0 KP_NUMLOCK  &none    &none  &kp F1  &kp F2  &kp F3  &kp F10  &none
+&none  &none           &none         &none               &none               &none    &none  &kp F1  &kp F2  &kp F3  &kp F10  &none
                                      &none               &none               &none    &none  &none   &mo 12
             >;
+
+            label = "Fun";
         };
 
         pc_fun_layer {
@@ -534,11 +548,13 @@
 
         board_layer {
             bindings = <
-       &none          &none          &out OUT_USB   &out OUT_BLE   &none     &none   &out OUT_BLE   &out OUT_USB   &none         &none
-       &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0   &tog 1    &tog 1  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3
+       &none          &none          &out OUT_USB   &out OUT_BLE   &none     &none   &out OUT_BLE   &out OUT_USB   &none          &none
+       &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0   &tog 1    &tog 1  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3
 &none  &bt BT_DISC 3  &bt BT_DISC 2  &bt BT_DISC 1  &bt BT_DISC 0  &none     &none   &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &none
                                      &none          &none          &none     &none   &none          &none
             >;
+
+            label = "Board";
         };
     };
 
