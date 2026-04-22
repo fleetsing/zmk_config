@@ -111,9 +111,9 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Sft+TAB
   - {type: held}
-  - ''
+  - TAB
   - ''
   - DEL
   - ''
