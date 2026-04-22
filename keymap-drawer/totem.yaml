@@ -37,7 +37,7 @@ layers:
   - {t: SPACE, h: Nav}
   - {t: F24, h: Num}
   - {t: F24, h: Media}
-  - {t: BACKSPACE, h: Nav}
+  - '&ss'
   - {t: ENTER, h: Mouse}
   PC:
   - {t: ▽, type: trans}
@@ -115,8 +115,8 @@ layers:
   - {type: held}
   - TAB
   - ''
-  - DEL
-  - ''
+  - BACKSPACE
+  - DELETE
   'Nav ':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -194,7 +194,7 @@ layers:
   - {type: held}
   - '0'
   - BACKSPACE
-  - ''
+  - DELETE
   'Num ':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
