@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: totem}
 layers:
-  MacOS:
+  macos:
   - X
   - G
   - D
@@ -33,13 +33,13 @@ layers:
   - ''''
   - '['
   - Y
-  - {t: ESCAPE, h: Fun}
-  - {t: SPACE, h: Nav}
-  - {t: F24, h: Num}
-  - {t: F24, h: Media}
+  - {t: ESCAPE, h: fun}
+  - {t: SPACE, h: nav}
+  - {t: F24, h: num}
+  - {t: F24, h: media}
   - '&ss'
-  - {t: ENTER, h: Mouse}
-  PC:
+  - {t: ENTER, h: mouse}
+  pc:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -78,7 +78,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Nav:
+  nav:
   - ''
   - Gui+CUT
   - Gui+COPY
@@ -117,7 +117,7 @@ layers:
   - ''
   - BACKSPACE
   - DELETE
-  'Nav ':
+  pc_nav:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -156,7 +156,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  AutoNav:
+  autonav:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -195,7 +195,7 @@ layers:
   - {t: ▽, type: trans}
   - BACKSPACE
   - DELETE
-  Num:
+  num:
   - ''
   - ''
   - ''
@@ -234,7 +234,7 @@ layers:
   - '0'
   - BACKSPACE
   - DELETE
-  'Num ':
+  pc_num:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -273,7 +273,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  AutoNum:
+  autonum:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -312,7 +312,7 @@ layers:
   - '0'
   - BACKSPACE
   - DELETE
-  Fun:
+  fun:
   - ''
   - ''
   - ''
@@ -350,8 +350,8 @@ layers:
   - ''
   - ''
   - ''
-  - Board
-  'Fun ':
+  - board
+  pc_fun:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -390,7 +390,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Media:
+  media:
   - ''
   - BRIGHTNESS DEC
   - ''
@@ -429,7 +429,7 @@ layers:
   - {type: held}
   - ''
   - ''
-  Mouse:
+  mouse:
   - ''
   - '&msc SCRL_LEFT'
   - ''
@@ -462,13 +462,13 @@ layers:
   - ''
   - ''
   - ''
-  - Board
+  - board
   - ''
   - ''
   - ''
   - ''
   - {type: held}
-  Board:
+  board:
   - ''
   - ''
   - OUT USB
@@ -483,8 +483,8 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '1'}
   - {t: BT, h: '0'}
-  - {t: PC, h: toggle}
-  - {t: PC, h: toggle}
+  - {t: pc, h: toggle}
+  - {t: pc, h: toggle}
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -498,7 +498,7 @@ layers:
   - ''
   - {t: BT DISC, h: '0'}
   - {t: BT DISC, h: '1'}
-  - {t: BT, h: '2'}
+  - {t: BT DISC, h: '2'}
   - {t: BT DISC, h: '3'}
   - ''
   - {type: held}
@@ -510,85 +510,85 @@ layers:
 combos:
 - p: [4, 14]
   k: {t: Sft+4, h: Alt+4}
-  l: [MacOS, Num]
+  l: [macos, num]
 - p: [4, 14]
   k: {t: AltGr+E, h: AltGr+4}
-  l: [PC, 'Num ']
+  l: [pc, pc_num]
 - p: [14, 25]
   k: {t: Alt+2, h: 'Sft+]'}
-  l: [MacOS, Num, PC, 'Num ']
+  l: [macos, num, pc, pc_num]
 - p: [3, 13]
   k: {t: Sft+., h: 'Sft+,'}
-  l: [MacOS, Num, PC, 'Num ']
+  l: [macos, num, pc, pc_num]
 - p: [13, 24]
   k: {t: \, h: Sft+2}
-  l: [MacOS, Num, PC, 'Num ']
+  l: [macos, num, pc, pc_num]
 - p: [12, 2]
   k: {t: '-', h: Sft+0}
-  l: [MacOS, Num, PC, 'Num ']
+  l: [macos, num, pc, pc_num]
 - p: [12, 23]
   k: {t: /, h: Sft+/}
-  l: [MacOS, Num, PC, 'Num ']
+  l: [macos, num, pc, pc_num]
 - p: [1, 11]
   k: {t: Sft+\, h: Sft+5}
-  l: [MacOS, Num, PC, 'Num ']
+  l: [macos, num, pc, pc_num]
 - p: [11, 22]
   k: {t: Sft+7, h: Sft+Alt+7}
-  l: [MacOS, Num]
+  l: [macos, num]
 - p: [11, 22]
   k: {t: Sft+7, h: AltGr+=}
-  l: [PC, 'Num ']
+  l: [pc, pc_num]
 - p: [5, 15]
   k: {t: Sft+6, h: Sft+3}
-  l: [MacOS, Num, PC, 'Num ']
+  l: [macos, num, pc, pc_num]
 - p: [15, 26]
   k: {t: 'Alt+]', h: Alt+7}
-  l: [MacOS, Num]
+  l: [macos, num]
 - p: [15, 26]
   k: {t: 'AltGr+]', h: AltGr+\}
-  l: [PC, 'Num ']
+  l: [pc, pc_num]
 - p: [6, 16]
   k: {t: Sft+8, h: Sft+Alt+8}
-  l: [MacOS, Num]
+  l: [macos, num]
 - p: [16, 6]
   k: {t: Sft+8, h: AltGr+7}
-  l: [PC, 'Num ']
+  l: [pc, pc_num]
 - p: [16, 27]
   k: {t: Alt+8, h: '`'}
-  l: [MacOS, Num, PC, 'Num ']
+  l: [macos, num, pc, pc_num]
 - p: [7, 17]
   k: {t: Sft+9, h: Alt+Sft+9}
-  l: [MacOS, Num]
+  l: [macos, num]
 - p: [7, 17]
   k: {t: Sft+9, h: AltGr+0}
-  l: [PC, 'Num ']
+  l: [pc, pc_num]
 - p: [17, 28]
   k: {t: Alt+9, h: Sft+`}
-  l: [MacOS, Num, PC, 'Num ']
+  l: [macos, num, pc, pc_num]
 - p: [8, 18]
   k: {t: '=', h: Alt+5}
-  l: [MacOS, Num, PC, 'Num ']
+  l: [macos, num, pc, pc_num]
 - p: [13, 12]
   k: TAB
-  l: [MacOS, PC, Nav, 'Nav ', Num, 'Num ']
+  l: [macos, pc, nav, pc_nav, num, pc_num]
 - p: [12, 11]
   k: Sft+TAB
-  l: [MacOS, PC, Nav, 'Nav ', Num, 'Num ']
+  l: [macos, pc, nav, pc_nav, num, pc_num]
 - p: [16, 17]
   k: BACKSPACE
-  l: [MacOS, PC, Nav, 'Nav ', Num, 'Num ']
+  l: [macos, pc, nav, pc_nav, num, pc_num]
 - p: [17, 18]
   k: DELETE
-  l: [MacOS, PC, Nav, 'Nav ', Num, 'Num ']
+  l: [macos, pc, nav, pc_nav, num, pc_num]
 - p: [18, 29]
   k: {t: Alt+`, h: Alt+\}
-  l: [MacOS, Num]
+  l: [macos, num]
 - p: [19, 30]
   k: {t: Alt+Sft+`, h: Alt+1}
-  l: [MacOS, Num]
+  l: [macos, num]
 - p: [16, 18]
   k: '&nav_word 4'
-  l: [MacOS, PC]
+  l: [macos, pc]
 - p: [27, 29]
   k: '&num_word 7'
-  l: [MacOS, PC, Nav, 'Nav ']
+  l: [macos, pc, nav, pc_nav]
