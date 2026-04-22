@@ -153,7 +153,7 @@
        &none                &kp LG(K_CUT)      &kp LG(K_COPY)         &kp LG(K_PASTE)    &none              &none     &kp PG_DN  &kp PG_UP  &kp INSERT  &none
        &hml LEFT_SHIFT F16  &hml LEFT_ALT F15  &hml LEFT_CONTROL F14  &hml LEFT_GUI F13  &kp PRINTSCREEN    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT   &none
 &none  &none                &none              &lmeh 0 K_REDO         &lhyp 0 K_UNDO     &none              &none     &kp END    &kp HOME   &none       &none  &none
-                                               &none                  &none              &none              &none     &kp DEL    &none
+                                               &kp LS(TAB)            &none              &kp TAB            &none     &kp DEL    &none
             >;
 
             label = "Nav";
