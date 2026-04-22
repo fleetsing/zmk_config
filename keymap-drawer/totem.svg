@@ -409,13 +409,13 @@ path.combo {
 <path d="M621,112 l38,2" class="combo"/>
 <rect rx="6" ry="6" x="607" y="99" width="28" height="26" class="combo"/>
 <text x="621" y="112" class="combo tap">
-<tspan x="621" dy="-0.6em" style="font-size: 78%">&amp;nav_word</tspan><tspan x="621" dy="1.2em" style="font-size: 78%">2</tspan>
+<tspan x="621" dy="-0.6em" style="font-size: 78%">&amp;nav_word</tspan><tspan x="621" dy="1.2em" style="font-size: 78%">4</tspan>
 </text>
 </g>
 <g class="combo combopos-22">
 <rect rx="6" ry="6" x="605" y="154" width="28" height="26" class="combo"/>
 <text x="619" y="167" class="combo tap">
-<tspan x="619" dy="-0.6em" style="font-size: 78%">&amp;num_word</tspan><tspan x="619" dy="1.2em" style="font-size: 78%">4</tspan>
+<tspan x="619" dy="-0.6em" style="font-size: 78%">&amp;num_word</tspan><tspan x="619" dy="1.2em" style="font-size: 78%">7</tspan>
 </text>
 </g>
 </g>
@@ -675,13 +675,13 @@ path.combo {
 <path d="M621,112 l38,2" class="combo"/>
 <rect rx="6" ry="6" x="607" y="99" width="28" height="26" class="combo"/>
 <text x="621" y="112" class="combo tap">
-<tspan x="621" dy="-0.6em" style="font-size: 78%">&amp;nav_word</tspan><tspan x="621" dy="1.2em" style="font-size: 78%">2</tspan>
+<tspan x="621" dy="-0.6em" style="font-size: 78%">&amp;nav_word</tspan><tspan x="621" dy="1.2em" style="font-size: 78%">4</tspan>
 </text>
 </g>
 <g class="combo combopos-20">
 <rect rx="6" ry="6" x="605" y="154" width="28" height="26" class="combo"/>
 <text x="619" y="167" class="combo tap">
-<tspan x="619" dy="-0.6em" style="font-size: 78%">&amp;num_word</tspan><tspan x="619" dy="1.2em" style="font-size: 78%">4</tspan>
+<tspan x="619" dy="-0.6em" style="font-size: 78%">&amp;num_word</tspan><tspan x="619" dy="1.2em" style="font-size: 78%">7</tspan>
 </text>
 </g>
 </g>
@@ -859,7 +859,7 @@ path.combo {
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="605" y="154" width="28" height="26" class="combo"/>
 <text x="619" y="167" class="combo tap">
-<tspan x="619" dy="-0.6em" style="font-size: 78%">&amp;num_word</tspan><tspan x="619" dy="1.2em" style="font-size: 78%">4</tspan>
+<tspan x="619" dy="-0.6em" style="font-size: 78%">&amp;num_word</tspan><tspan x="619" dy="1.2em" style="font-size: 78%">7</tspan>
 </text>
 </g>
 </g>
@@ -1039,7 +1039,7 @@ path.combo {
 <g class="combo combopos-4">
 <rect rx="6" ry="6" x="605" y="154" width="28" height="26" class="combo"/>
 <text x="619" y="167" class="combo tap">
-<tspan x="619" dy="-0.6em" style="font-size: 78%">&amp;num_word</tspan><tspan x="619" dy="1.2em" style="font-size: 78%">4</tspan>
+<tspan x="619" dy="-0.6em" style="font-size: 78%">&amp;num_word</tspan><tspan x="619" dy="1.2em" style="font-size: 78%">7</tspan>
 </text>
 </g>
 </g>
@@ -1466,14 +1466,6 @@ path.combo {
 </text>
 <text x="729" y="202" class="combo hold">Alt+1</text>
 </g>
-<g class="combo combopos-21">
-<path d="M621,112 l-38,-2" class="combo"/>
-<path d="M621,112 l38,2" class="combo"/>
-<rect rx="6" ry="6" x="607" y="99" width="28" height="26" class="combo"/>
-<text x="621" y="112" class="combo tap">
-<tspan x="621" dy="-0.6em" style="font-size: 78%">&amp;nav_word</tspan><tspan x="621" dy="1.2em" style="font-size: 78%">2</tspan>
-</text>
-</g>
 </g>
 </g>
 <g transform="translate(30, 2147)" class="layer-Num ">
@@ -1724,14 +1716,6 @@ path.combo {
 <g class="combo combopos-18">
 <rect rx="6" ry="6" x="634" y="86" width="28" height="26" class="combo"/>
 <text x="648" y="99" class="combo tap">DELETE</text>
-</g>
-<g class="combo combopos-19">
-<path d="M621,112 l-38,-2" class="combo"/>
-<path d="M621,112 l38,2" class="combo"/>
-<rect rx="6" ry="6" x="607" y="99" width="28" height="26" class="combo"/>
-<text x="621" y="112" class="combo tap">
-<tspan x="621" dy="-0.6em" style="font-size: 78%">&amp;nav_word</tspan><tspan x="621" dy="1.2em" style="font-size: 78%">2</tspan>
-</text>
 </g>
 </g>
 </g>

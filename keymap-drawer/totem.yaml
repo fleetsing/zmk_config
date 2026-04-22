@@ -587,8 +587,8 @@ combos:
   k: {t: Alt+Sft+`, h: Alt+1}
   l: [MacOS, Num]
 - p: [16, 18]
-  k: '&nav_word 2'
-  l: [MacOS, PC, Num, 'Num ']
+  k: '&nav_word 4'
+  l: [MacOS, PC]
 - p: [27, 29]
-  k: '&num_word 4'
+  k: '&num_word 7'
   l: [MacOS, PC, Nav, 'Nav ']
