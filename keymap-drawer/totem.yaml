@@ -431,13 +431,13 @@ layers:
   - {type: held}
 combos:
 - p: [4, 14]
-  k: {t: Sft+4, h: AltGr+4}
+  k: {t: Sft+4, h: Alt+4}
   l: [MacOS, Num]
 - p: [4, 14]
   k: {t: AltGr+E, h: AltGr+4}
   l: [PC, 'Num ']
 - p: [14, 25]
-  k: {t: AltGr+2, h: 'Sft+]'}
+  k: {t: Alt+2, h: 'Sft+]'}
   l: [MacOS, Num, PC, 'Num ']
 - p: [3, 13]
   k: {t: Sft+., h: 'Sft+,'}
@@ -455,7 +455,7 @@ combos:
   k: {t: Sft+\, h: Sft+5}
   l: [MacOS, Num, PC, 'Num ']
 - p: [11, 22]
-  k: {t: Sft+7, h: Sft+AltGr+7}
+  k: {t: Sft+7, h: Sft+Alt+7}
   l: [MacOS, Num]
 - p: [11, 22]
   k: {t: Sft+7, h: AltGr+=}
@@ -464,31 +464,31 @@ combos:
   k: {t: Sft+6, h: Sft+3}
   l: [MacOS, Num, PC, 'Num ']
 - p: [15, 26]
-  k: {t: 'AltGr+]', h: AltGr+7}
+  k: {t: 'Alt+]', h: Alt+7}
   l: [MacOS, Num]
 - p: [15, 26]
   k: {t: 'AltGr+]', h: AltGr+\}
   l: [PC, 'Num ']
 - p: [6, 16]
-  k: {t: Sft+8, h: Sft+AltGr+8}
+  k: {t: Sft+8, h: Sft+Alt+8}
   l: [MacOS, Num]
 - p: [16, 6]
   k: {t: Sft+8, h: AltGr+7}
   l: [PC, 'Num ']
 - p: [16, 27]
-  k: {t: AltGr+8, h: '`'}
+  k: {t: Alt+8, h: '`'}
   l: [MacOS, Num, PC, 'Num ']
 - p: [7, 17]
-  k: {t: Sft+9, h: AltGr+Sft+9}
+  k: {t: Sft+9, h: Alt+Sft+9}
   l: [MacOS, Num]
 - p: [7, 17]
   k: {t: Sft+9, h: AltGr+0}
   l: [PC, 'Num ']
 - p: [17, 28]
-  k: {t: AltGr+9, h: Sft+`}
+  k: {t: Alt+9, h: Sft+`}
   l: [MacOS, Num, PC, 'Num ']
 - p: [8, 18]
-  k: {t: '=', h: AltGr+5}
+  k: {t: '=', h: Alt+5}
   l: [MacOS, Num, PC, 'Num ']
 - p: [13, 12]
   k: TAB
@@ -503,14 +503,14 @@ combos:
   k: DELETE
   l: [MacOS, PC, Nav, 'Nav ', Num, 'Num ']
 - p: [18, 29]
-  k: {t: AltGr+`, h: AltGr+\}
+  k: {t: Alt+`, h: Alt+\}
   l: [MacOS, Num]
 - p: [19, 30]
-  k: {t: AltGr+Sft+`, h: AltGr+1}
+  k: {t: Alt+Sft+`, h: Alt+1}
   l: [MacOS, Num]
 - p: [16, 18]
-  k: {t: Nav, h: toggle}
+  k: '&nav_word 2'
   l: [MacOS, PC, Num, 'Num ']
 - p: [27, 29]
-  k: {t: Num, h: toggle}
+  k: '&num_word 4'
   l: [MacOS, PC, Nav, 'Nav ']
