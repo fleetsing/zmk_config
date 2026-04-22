@@ -412,15 +412,15 @@
         /* Layer combos: make accidental toggles harder than symbol entry. */
 
         combo_nav_layer {
-            bindings = <&nav_word 2>;
+            bindings = <&nav_word 4>;
             key-positions = <16 18>;
             timeout-ms = <28>;
             require-prior-idle-ms = <140>;
-            layers = <0 1 5 6>;
+            layers = <0 1>;
         };
 
         combo_num_layer {
-            bindings = <&num_word 4>;
+            bindings = <&num_word 7>;
             key-positions = <27 29>;
             timeout-ms = <28>;
             require-prior-idle-ms = <140>;
@@ -604,4 +604,5 @@
         CARET PERCENT EXCLAMATION
         LESS_THAN GREATER_THAN
     >;
+    ignore-modifiers;
 };
