@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: bildermankawasaki
       url-base: https://github.com/bildermankawasaki
+    - name: urob
+      url-base: https://github.com/urob
     # Add your own GitHub username or organization here if you split custom code
     # into a separate ZMK module repository.
     # - name: yourname
@@ -18,6 +20,10 @@ manifest:
     - name: zmk-keyboard-totem
       remote: bildermankawasaki
       revision: main
+
+    - name: zmk-auto-layer
+      remote: urob
+      revision: v0.3
 
     # Optional custom module repo:
     # - name: zmk-modules

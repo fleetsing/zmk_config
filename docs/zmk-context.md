@@ -15,6 +15,7 @@ This repo is the day-to-day buildable ZMK user-config repo for the Totem keyboar
 - ZMK ref: `v0.3`
 - GitHub build workflow pin: `v0.3`
 - Totem module repo: `bildermankawasaki/zmk-keyboard-TOTEM`
+- Auto-layer module repo: `urob/zmk-auto-layer` at `v0.3`
 - Board: `seeeduino_xiao_ble`
 - Shields:
   - `totem_left`
@@ -32,6 +33,8 @@ This repo is the day-to-day buildable ZMK user-config repo for the Totem keyboar
   `MacOS`, `PC`, `Nav`, `Nav `, `Num`, `Num `, `Fun`, `Fun `, `Media`, and `Board`.
 - `PC` is a transparent base overlay that swaps the relevant GUI and Control home-row holds for PC use.
 - `Nav `, `Num `, and `Fun ` are transparent PC-specific overlays that are activated through conditional layers when `PC` is combined with `Nav`, `Num`, or `Fun`.
+- The navigation and number layer combos now use auto-layer behaviors instead of plain toggles:
+  a custom `nav_word` instance for repeated navigation/editing actions, and the module-provided `num_word` for number entry.
 - The keymap keeps its custom behavior definitions inline today: `Meh` and `Hyper` macros plus six positional hold-tap helpers for left/right home-row mods and left/right bottom-row `Meh`/`Hyper`.
 - All of those hold-tap helpers currently share the same tuning style: `balanced`, `quick-tap-ms = 175`, `require-prior-idle-ms = 150`, `retro-tap`, and `hold-trigger-on-release`.
 - `config/totem_left.conf` now carries the central-side BLE battery reporting settings used for host-side monitoring apps in addition to disabling USB logging.
