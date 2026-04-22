@@ -429,3 +429,88 @@ layers:
   - ''
   - ''
   - {type: held}
+combos:
+- p: [4, 14]
+  k: {t: Sft+4, h: AltGr+4}
+  l: [MacOS, Num]
+- p: [4, 14]
+  k: {t: AltGr+E, h: AltGr+4}
+  l: [PC, 'Num ']
+- p: [14, 25]
+  k: {t: AltGr+2, h: 'Sft+]'}
+  l: [MacOS, Num, PC, 'Num ']
+- p: [3, 13]
+  k: {t: Sft+., h: 'Sft+,'}
+  l: [MacOS, Num, PC, 'Num ']
+- p: [13, 24]
+  k: {t: \, h: Sft+2}
+  l: [MacOS, Num, PC, 'Num ']
+- p: [12, 2]
+  k: {t: '-', h: Sft+0}
+  l: [MacOS, Num, PC, 'Num ']
+- p: [12, 23]
+  k: {t: /, h: Sft+/}
+  l: [MacOS, Num, PC, 'Num ']
+- p: [1, 11]
+  k: {t: Sft+\, h: Sft+5}
+  l: [MacOS, Num, PC, 'Num ']
+- p: [11, 22]
+  k: {t: Sft+7, h: Sft+AltGr+7}
+  l: [MacOS, Num]
+- p: [11, 22]
+  k: {t: Sft+7, h: AltGr+=}
+  l: [PC, 'Num ']
+- p: [5, 15]
+  k: {t: Sft+6, h: Sft+3}
+  l: [MacOS, Num, PC, 'Num ']
+- p: [15, 26]
+  k: {t: 'AltGr+]', h: AltGr+7}
+  l: [MacOS, Num]
+- p: [15, 26]
+  k: {t: 'AltGr+]', h: AltGr+\}
+  l: [PC, 'Num ']
+- p: [6, 16]
+  k: {t: Sft+8, h: Sft+AltGr+8}
+  l: [MacOS, Num]
+- p: [16, 6]
+  k: {t: Sft+8, h: AltGr+7}
+  l: [PC, 'Num ']
+- p: [16, 27]
+  k: {t: AltGr+8, h: '`'}
+  l: [MacOS, Num, PC, 'Num ']
+- p: [7, 17]
+  k: {t: Sft+9, h: AltGr+Sft+9}
+  l: [MacOS, Num]
+- p: [7, 17]
+  k: {t: Sft+9, h: AltGr+0}
+  l: [PC, 'Num ']
+- p: [17, 28]
+  k: {t: AltGr+9, h: Sft+`}
+  l: [MacOS, Num, PC, 'Num ']
+- p: [8, 18]
+  k: {t: '=', h: AltGr+5}
+  l: [MacOS, Num, PC, 'Num ']
+- p: [13, 12]
+  k: TAB
+  l: [MacOS, PC, Nav, 'Nav ', Num, 'Num ']
+- p: [12, 11]
+  k: Sft+TAB
+  l: [MacOS, PC, Nav, 'Nav ', Num, 'Num ']
+- p: [16, 17]
+  k: BACKSPACE
+  l: [MacOS, PC, Nav, 'Nav ', Num, 'Num ']
+- p: [17, 18]
+  k: DELETE
+  l: [MacOS, PC, Nav, 'Nav ', Num, 'Num ']
+- p: [18, 29]
+  k: {t: AltGr+`, h: AltGr+\}
+  l: [MacOS, Num]
+- p: [19, 30]
+  k: {t: AltGr+Sft+`, h: AltGr+1}
+  l: [MacOS, Num]
+- p: [16, 18]
+  k: {t: Nav, h: toggle}
+  l: [MacOS, PC, Num, 'Num ']
+- p: [27, 29]
+  k: {t: Num, h: toggle}
+  l: [MacOS, PC, Nav, 'Nav ']
