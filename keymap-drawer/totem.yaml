@@ -38,7 +38,7 @@ layers:
   - {t: F24, h: Num}
   - {t: F24, h: Media}
   - {t: BACKSPACE, h: Nav}
-  - {t: ENTER, h: Media}
+  - {t: ENTER, h: Mouse}
   PC:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -272,7 +272,7 @@ layers:
   - ''
   - ''
   - ''
-  - ''
+  - Board
   'Fun ':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -351,6 +351,45 @@ layers:
   - {type: held}
   - ''
   - ''
+  Mouse:
+  - ''
+  - '&msc SCRL_LEFT'
+  - ''
+  - '&msc SCRL_RIGHT'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&mmv MOVE_LEFT'
+  - '&mmv MOVE_UP'
+  - '&mmv MOVE_RIGHT'
+  - '&msc SCRL_UP'
+  - '&msc SCRL_UP'
+  - '&mkp MB1'
+  - '&mkp MB2'
+  - '&mkp MB3'
+  - ''
+  - ''
+  - ''
+  - ''
+  - '&mmv MOVE_DOWN'
+  - ''
+  - '&msc SCRL_DOWN'
+  - '&msc SCRL_DOWN'
+  - '&mkp MB4'
+  - '&mkp MB5'
+  - ''
+  - ''
+  - ''
+  - Board
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
   Board:
   - ''
   - ''
@@ -366,8 +405,8 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '1'}
   - {t: BT, h: '0'}
-  - ''
-  - ''
+  - {t: PC, h: toggle}
+  - {t: PC, h: toggle}
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
@@ -384,12 +423,9 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT DISC, h: '3'}
   - ''
+  - {type: held}
   - ''
   - ''
   - ''
   - ''
-  - ''
-  - ''
-  Mouse: ['', '&msc SCRL_LEFT', '', '&msc SCRL_RIGHT', '', '', '', '', '', '', '', '&mmv MOVE_LEFT', '&mmv MOVE_UP', '&mmv MOVE_RIGHT', '&msc SCRL_UP', '&msc SCRL_UP',
-    '&mkp MB1', '&mkp MB2', '&mkp MB3', '', '', '', '', '&mmv MOVE_DOWN', '', '&msc SCRL_DOWN', '&msc SCRL_DOWN', '&mkp MB4', '&mkp MB5', '', '', '', '', '', '',
-    '', '', '']
+  - {type: held}
