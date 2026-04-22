@@ -10,7 +10,12 @@ This repository is the buildable ZMK user-config repo for the Totem keyboard.
 - `config/totem_left.conf`
 - `config/totem_right.conf`
 - `config/totem.json`
+- `config/totem.conf.example`
+- `config/totem.keymap.example`
 - GitHub Actions workflows for firmware builds and keymap drawing
+- `keymap_drawer.config.yaml`
+- `keymap-drawer/`
+- repo-local docs and helper scripts under `docs/` and `scripts/`
 
 ## Does not own
 
@@ -33,9 +38,12 @@ Those belong in sibling repos:
 ## Current keymap shape
 
 - `config/totem.keymap` is the maintained editor-safe source for the live Totem layout.
-- The current layout defines ten layers: `MacOS`, `PC`, `Nav`, `Nav `, `Num`, `Num `, `Fun`, `Fun `, `Media`, and `Board`.
+- The current layout defines thirteen layers: `MacOS`, `PC`, `Nav`, `Nav `, `AutoNav`, `Num`, `Num `, `AutoNum`, `Fun`, `Fun `, `Media`, `Mouse`, and `Board`.
 - `PC` plus `Nav `, `Num `, and `Fun ` are transparent overlays used to swap the relevant GUI and Control holds for PC usage without duplicating whole layers.
-- Custom `Meh` and `Hyper` macros and the left/right positional hold-tap helpers are currently defined inline in the keymap rather than split into a separate module.
+- `AutoNav` and `AutoNum` are combo-driven auto layers used for navigation/editing and number entry flows that self-cancel once typing leaves their continue lists.
+- Dedicated `Media`, `Mouse`, and `Board` layers handle host controls, pointer actions, and Bluetooth/output management.
+- Custom `Meh` and `Hyper` macros, home-row and bottom-row positional hold-taps, combo helpers, and transparent-hold helpers are currently defined inline in the keymap rather than split into a separate module.
+- `config/totem_left.conf` is the central-side `.conf` and carries the split battery reporting settings used by host-side monitoring apps.
 
 ## Local verification
 
@@ -47,6 +55,21 @@ cd ../zmk_workspace
 ```
 
 That keeps disposable west state out of this repository and copies the flashable UF2 files into `../zmk_workspace/artifacts/firmware/`.
+
+Useful variants:
+
+```bash
+./scripts/build-local-firmware.sh left
+./scripts/build-local-firmware.sh right
+ZMK_SKIP_UPDATE=1 ./scripts/build-local-firmware.sh all
+ZMK_SKIP_UPDATE=1 ZMK_SKIP_PIP=1 ./scripts/build-local-firmware.sh all
+```
+
+## Supporting files
+
+- `config/totem.conf.example` and `config/totem.keymap.example` are starter templates, not the live build inputs.
+- `scripts/update-totem-json.sh` refreshes `config/totem.json` from the current Keymap Editor contrib source.
+- `keymap_drawer.config.yaml` and `keymap-drawer/` define and store the generated layer diagrams derived from `config/totem.keymap`.
 
 ## Host-side status apps
 
