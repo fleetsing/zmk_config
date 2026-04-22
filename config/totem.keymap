@@ -157,6 +157,39 @@
             continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP INSERT END HOME TAB BACKSPACE DELETE K_UNDO K_REDO>;
             ignore-modifiers;
         };
+
+        mht: mod_hold_transparent {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Mod Hold-Transparent";
+            bindings = <&kp>, <&trans>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <200>;
+            hold-while-undecided;
+        };
+
+        hypht: hyper_hold_transparent {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Hyper Hold-Transparent";
+            bindings = <&lhyp>, <&trans>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <200>;
+            hold-while-undecided;
+        };
+
+        mehht: meh_hold_transparent {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Meh Hold-Transparent";
+            bindings = <&lmeh>, <&trans>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            require-prior-idle-ms = <200>;
+            hold-while-undecided;
+        };
     };
 
     /* Ported from fleetsing/zmk-config-old; old 3x5+3 bottom-row positions are shifted for Totem. */
@@ -400,9 +433,9 @@
 
         macos_layer {
             bindings = <
-       &kp X              &kp G        &kp D         &kp F        &kp B        &kp Q       &kp H          &kp U                  &kp O        &kp Z
-       &hml LEFT_SHIFT R  &hml LALT S  &hml LCTRL T  &hml LGUI N  &kp K        &kp J       &hmr RGUI L    &hmr RCTRL E           &hmr RALT A  &hmr RIGHT_SHIFT I
-&kp W  &kp SQT            &kp C        &lmeh 0 M     &lhyp 0 P    &kp V        &kp PERIOD  &rhyp 0 COMMA  &rmeh 0 LG(SEMICOLON)  &kp SQT      &kp LEFT_BRACKET    &kp Y
+       &kp X              &kp G        &kp D         &kp F        &kp B        &kp Q       &kp H          &kp U              &kp O        &kp Z
+       &hml LEFT_SHIFT R  &hml LALT S  &hml LCTRL T  &hml LGUI N  &kp K        &kp J       &hmr RGUI L    &hmr RCTRL E       &hmr RALT A  &hmr RIGHT_SHIFT I
+&kp W  &kp SQT            &kp C        &lmeh 0 M     &lhyp 0 P    &kp V        &kp PERIOD  &rhyp 0 COMMA  &rmeh 0 SEMICOLON  &kp SQT      &kp LEFT_BRACKET    &kp Y
                                        &lt 8 ESCAPE  &lt 2 SPACE  &lt 5 F24    &lt 10 F24  &ss            &lt 11 ENTER
             >;
 
@@ -444,10 +477,10 @@
 
         autonav_layer {
             bindings = <
-        &trans  &trans  &trans       &trans  &trans     &trans          &trans          &trans        &trans           &trans
-        &trans  &trans  &trans       &trans  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &trans  &trans  &trans       &trans  &trans     &trans          &trans          &trans        &trans           &trans  &trans
-                        &kp LS(TAB)  &trans  &kp TAB    &trans          &kp BACKSPACE   &kp DELETE
+        &trans             &trans           &trans               &trans           &trans     &trans          &trans          &trans        &trans           &trans
+        &mht LEFT_SHIFT 0  &mht LEFT_ALT 0  &mht LEFT_CONTROL 0  &mht LEFT_GUI 0  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &trans             &trans           &mehht 0 0           &hypht 0 0       &trans     &trans          &trans          &trans        &trans           &trans  &trans
+                                            &kp LS(TAB)          &trans           &kp TAB    &trans          &kp BACKSPACE   &kp DELETE
             >;
 
             label = "AutoNav";
@@ -478,10 +511,10 @@
         autonum_layer {
             label = "AutoNum";
             bindings = <
-       &none           &none         &none                   &none                       &none    &none   &kp N7         &kp N8      &kp N9  &none
-       &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL        &kp LEFT_GUI                &none    &none   &kp N4         &kp N5      &kp N6  &kp N0
-&none  &none           &none         &kp LA(LC(LEFT_SHIFT))  &kp LA(LC(LG(LEFT_SHIFT)))  &none    &none   &kp N1         &kp N2      &kp N3  &none   &none
-                                     &none                   &none                       &none    &kp N0  &kp BACKSPACE  &kp DELETE
+        &trans             &trans           &trans               &trans           &trans    &trans  &kp N7         &kp N8      &kp N9  &trans
+        &mht LEFT_SHIFT 0  &mht LEFT_ALT 0  &mht LEFT_CONTROL 0  &mht LEFT_GUI 0  &trans    &trans  &kp N4         &kp N5      &kp N6  &kp N0
+&trans  &trans             &trans           &mehht 0 0           &hypht 0 0       &trans    &trans  &kp N1         &kp N2      &kp N3  &trans  &trans
+                                            &trans               &trans           &trans    &kp N0  &kp BACKSPACE  &kp DELETE
             >;
         };
 
