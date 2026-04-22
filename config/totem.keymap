@@ -131,7 +131,7 @@
        &kp X              &kp G        &kp D         &kp F        &kp B        &kp Q       &kp H            &kp U                  &kp O        &kp Z
        &hml LEFT_SHIFT R  &hml LALT S  &hml LCTRL T  &hml LGUI N  &kp K        &kp J       &hmr RGUI L      &hmr RCTRL E           &hmr RALT A  &hmr RIGHT_SHIFT I
 &kp W  &kp SQT            &kp C        &lmeh 0 M     &lhyp 0 P    &kp V        &kp PERIOD  &rhyp 0 COMMA    &rmeh 0 LG(SEMICOLON)  &kp SQT      &kp LEFT_BRACKET    &kp Y
-                                       &lt 6 ESCAPE  &lt 2 SPACE  &lt 4 F24    &lt 8 F24   &lt 2 BACKSPACE  &lt 8 ENTER
+                                       &lt 6 ESCAPE  &lt 2 SPACE  &lt 4 F24    &lt 8 F24   &lt 2 BACKSPACE  &lt 9 ENTER
             >;
 
             label = "MacOS";
@@ -197,7 +197,7 @@
        &none           &none         &none               &none               &none    &none  &kp F7  &kp F8  &kp F9  &kp F12
        &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL    &kp LEFT_GUI        &none    &none  &kp F4  &kp F5  &kp F6  &kp F11
 &none  &none           &none         &lmeh 0 SCROLLLOCK  &lhyp 0 KP_NUMLOCK  &none    &none  &kp F1  &kp F2  &kp F3  &kp F10  &none
-                                     &none               &none               &none    &none  &none   &none
+                                     &none               &none               &none    &none  &none   &mo 10
             >;
 
             label = "Fun";
@@ -225,26 +225,26 @@
             label = "Media";
         };
 
-        board_layer {
-            bindings = <
-       &none          &none          &out OUT_USB   &out OUT_BLE   &none    &none  &out OUT_BLE   &out OUT_USB   &none         &none
-       &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0   &none    &none  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3
-&none  &bt BT_DISC 3  &bt BT_DISC 2  &bt BT_DISC 1  &bt BT_DISC 0  &none    &none  &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_SEL 2  &bt BT_DISC 3  &none
-                                     &none          &none          &none    &none  &none          &none
-            >;
-
-            label = "Board";
-        };
-
         mouse_layer {
             bindings = <
        &none  &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &none             &none           &none     &none     &none     &none
        &none  &mmv MOVE_LEFT  &mmv MOVE_UP    &mmv MOVE_RIGHT  &msc SCRL_UP      &msc SCRL_UP    &mkp MB1  &mkp MB2  &mkp MB3  &none
 &none  &none  &none           &mmv MOVE_DOWN  &none            &msc SCRL_DOWN    &msc SCRL_DOWN  &mkp MB4  &mkp MB5  &none     &none  &none
-                              &none           &none            &none             &none           &none     &none
+                              &mo 10          &none            &none             &none           &none     &none
             >;
 
             label = "Mouse";
+        };
+
+        board_layer {
+            bindings = <
+       &none          &none          &out OUT_USB   &out OUT_BLE   &none     &none   &out OUT_BLE   &out OUT_USB   &none         &none
+       &bt BT_SEL 3   &bt BT_SEL 2   &bt BT_SEL 1   &bt BT_SEL 0   &tog 1    &tog 1  &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2  &bt BT_SEL 3
+&none  &bt BT_DISC 3  &bt BT_DISC 2  &bt BT_DISC 1  &bt BT_DISC 0  &none     &none   &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_SEL 2  &bt BT_DISC 3  &none
+                                     &none          &none          &none     &none   &none          &none
+            >;
+
+            label = "Board";
         };
     };
 
