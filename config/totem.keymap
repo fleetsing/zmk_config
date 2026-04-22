@@ -137,6 +137,248 @@
             #binding-cells = <0>;
             bindings = <&lts 2 LEFT_SHIFT>, <&caps_word>;
         };
+
+        htc: hold_tap_combo {
+            compatible = "zmk,behavior-hold-tap";
+            label = "Hold-Tap Combo";
+            bindings = <&kp>, <&kp>;
+            #binding-cells = <2>;
+            tapping-term-ms = <185>;
+            require-prior-idle-ms = <20>;
+            flavor = "tap-preferred";
+        };
+    };
+
+    /* Ported from fleetsing/zmk-config-old; old 3x5+3 bottom-row positions are shifted for Totem. */
+    combos {
+        compatible = "zmk,combos";
+
+        /* Symbol combos: slightly more time to chord intentionally, modest idle gate. */
+        combo_euro_dollar {
+            bindings = <&htc RA(NUMBER_4) RS(NUMBER_4)>;
+            key-positions = <4 14>;
+            timeout-ms = <32>;
+            require-prior-idle-ms = <60>;
+            layers = <0 4>;
+        };
+
+        combo_pc_euro_dollar {
+            bindings = <&htc RA(NUMBER_4) RA(E)>;
+            key-positions = <4 14>;
+            timeout-ms = <32>;
+            require-prior-idle-ms = <60>;
+            layers = <1 5>;
+        };
+
+        combo_at_caret {
+            bindings = <&htc RS(RIGHT_BRACKET) RA(NUMBER_2)>;
+            key-positions = <14 25>;
+            timeout-ms = <32>;
+            require-prior-idle-ms = <60>;
+            layers = <0 4 1 5>;
+        };
+
+        combo_colon_semicolon {
+            bindings = <&htc RS(COMMA) RS(PERIOD)>;
+            key-positions = <3 13>;
+            timeout-ms = <32>;
+            require-prior-idle-ms = <60>;
+            layers = <0 4 1 5>;
+        };
+
+        combo_apostrophe_quote {
+            bindings = <&htc RS(NUMBER_2) BACKSLASH>;
+            key-positions = <13 24>;
+            timeout-ms = <32>;
+            require-prior-idle-ms = <60>;
+            layers = <0 4 1 5>;
+        };
+
+        combo_plus_equals {
+            bindings = <&htc RS(NUMBER_0) MINUS>;
+            key-positions = <12 2>;
+            timeout-ms = <32>;
+            require-prior-idle-ms = <60>;
+            layers = <0 4 1 5>;
+        };
+
+        combo_minus_underscore {
+            bindings = <&htc RS(SLASH) SLASH>;
+            key-positions = <12 23>;
+            timeout-ms = <32>;
+            require-prior-idle-ms = <60>;
+            layers = <0 4 1 5>;
+        };
+
+        combo_asterisk_percentage {
+            bindings = <&htc RS(NUMBER_5) RS(BACKSLASH)>;
+            key-positions = <1 11>;
+            timeout-ms = <32>;
+            require-prior-idle-ms = <60>;
+            layers = <0 4 1 5>;
+        };
+
+        combo_slash_backslash {
+            bindings = <&htc RS(RA(NUMBER_7)) RS(NUMBER_7)>;
+            key-positions = <11 22>;
+            timeout-ms = <32>;
+            require-prior-idle-ms = <60>;
+            layers = <0 4>;
+        };
+
+        combo_pc_slash_backslash {
+            bindings = <&htc RA(EQUAL) RS(NUMBER_7)>;
+            key-positions = <11 22>;
+            timeout-ms = <32>;
+            require-prior-idle-ms = <60>;
+            layers = <1 5>;
+        };
+
+        combo_ampersand_hash {
+            bindings = <&htc RS(NUMBER_3) RS(NUMBER_6)>;
+            key-positions = <5 15>;
+            timeout-ms = <32>;
+            require-prior-idle-ms = <60>;
+            layers = <0 4 1 5>;
+        };
+
+        combo_tilde_pipe {
+            bindings = <&htc RA(NUMBER_7) RA(RIGHT_BRACKET)>;
+            key-positions = <15 26>;
+            timeout-ms = <32>;
+            require-prior-idle-ms = <60>;
+            layers = <0 4>;
+        };
+
+        combo_pc_tilde_pipe {
+            bindings = <&htc RA(BACKSLASH) RA(RIGHT_BRACKET)>;
+            key-positions = <15 26>;
+            timeout-ms = <32>;
+            require-prior-idle-ms = <60>;
+            layers = <1 5>;
+        };
+
+        combo_left_parenth_brace {
+            bindings = <&htc RS(RA(NUMBER_8)) RS(NUMBER_8)>;
+            key-positions = <6 16>;
+            timeout-ms = <32>;
+            require-prior-idle-ms = <60>;
+            layers = <0 4>;
+        };
+
+        combo_pc_left_parenth_brace {
+            bindings = <&htc RA(NUMBER_7) RS(NUMBER_8)>;
+            key-positions = <16 6>;
+            timeout-ms = <32>;
+            require-prior-idle-ms = <60>;
+            layers = <1 5>;
+        };
+
+        combo_left_bracket_lesser {
+            bindings = <&htc GRAVE RA(NUMBER_8)>;
+            key-positions = <16 27>;
+            timeout-ms = <32>;
+            require-prior-idle-ms = <60>;
+            layers = <0 4 1 5>;
+        };
+
+        combo_right_parenth_brace {
+            bindings = <&htc RA(RS(NUMBER_9)) RS(NUMBER_9)>;
+            key-positions = <7 17>;
+            timeout-ms = <32>;
+            require-prior-idle-ms = <60>;
+            layers = <0 4>;
+        };
+
+        combo_pc_right_parenth_brace {
+            bindings = <&htc RA(NUMBER_0) RS(NUMBER_9)>;
+            key-positions = <7 17>;
+            timeout-ms = <32>;
+            require-prior-idle-ms = <60>;
+            layers = <1 5>;
+        };
+
+        combo_right_bracket_greater {
+            bindings = <&htc RS(GRAVE) RA(NUMBER_9)>;
+            key-positions = <17 28>;
+            timeout-ms = <32>;
+            require-prior-idle-ms = <60>;
+            layers = <0 4 1 5>;
+        };
+
+        combo_grave_infinity {
+            bindings = <&htc RA(NUMBER_5) EQUAL>;
+            key-positions = <8 18>;
+            timeout-ms = <32>;
+            require-prior-idle-ms = <60>;
+            layers = <0 4 1 5>;
+        };
+
+        /* Utility combos: tighter timing, stronger idle gate. */
+        combo_tab {
+            bindings = <&kp TAB>;
+            key-positions = <13 12>;
+            timeout-ms = <22>;
+            require-prior-idle-ms = <110>;
+            layers = <0 1 2 3 4 5>;
+        };
+
+        combo_tab_back {
+            bindings = <&kp RS(TAB)>;
+            key-positions = <12 11>;
+            timeout-ms = <22>;
+            require-prior-idle-ms = <110>;
+            layers = <0 1 2 3 4 5>;
+        };
+
+        combo_backspace {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <16 17>;
+            timeout-ms = <22>;
+            require-prior-idle-ms = <110>;
+            layers = <0 1 2 3 4 5>;
+        };
+
+        combo_delete {
+            bindings = <&kp DELETE>;
+            key-positions = <17 18>;
+            timeout-ms = <22>;
+            require-prior-idle-ms = <110>;
+            layers = <0 1 2 3 4 5>;
+        };
+
+        combo_lesseror_trademark {
+            bindings = <&mt RA(BACKSLASH) RA(GRAVE)>;
+            key-positions = <18 29>;
+            timeout-ms = <32>;
+            require-prior-idle-ms = <60>;
+            layers = <0 4>;
+        };
+
+        combo_greateror_copyright {
+            bindings = <&mt RA(NUMBER_1) RA(RS(GRAVE))>;
+            key-positions = <19 30>;
+            timeout-ms = <32>;
+            require-prior-idle-ms = <60>;
+            layers = <0 4>;
+        };
+
+        /* Layer combos: make accidental toggles harder than symbol entry. */
+        combo_nav_layer {
+            bindings = <&tog 2>;
+            key-positions = <16 18>;
+            timeout-ms = <28>;
+            require-prior-idle-ms = <140>;
+            layers = <0 1 4 5>;
+        };
+
+        combo_num_layer {
+            bindings = <&tog 4>;
+            key-positions = <27 29>;
+            timeout-ms = <28>;
+            require-prior-idle-ms = <140>;
+            layers = <0 1 2 3>;
+        };
     };
 
     keymap {
