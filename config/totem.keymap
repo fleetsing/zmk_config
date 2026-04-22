@@ -166,7 +166,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             require-prior-idle-ms = <200>;
-            hold-while-undecided;
+            flavor = "tap-unless-interrupted";
         };
 
         hypht: hyper_hold_transparent {
@@ -177,7 +177,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             require-prior-idle-ms = <200>;
-            hold-while-undecided;
+            flavor = "tap-unless-interrupted";
         };
 
         mehht: meh_hold_transparent {
@@ -188,7 +188,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             require-prior-idle-ms = <200>;
-            hold-while-undecided;
+            flavor = "tap-unless-interrupted";
         };
     };
 
@@ -604,5 +604,6 @@
         CARET PERCENT EXCLAMATION
         LESS_THAN GREATER_THAN
     >;
+
     ignore-modifiers;
 };
