@@ -29,7 +29,7 @@ layers:
   - V
   - .
   - {t: ',', h: '&hyper'}
-  - {t: Gui+;, h: '&meh'}
+  - {t: ;, h: '&meh'}
   - ''''
   - '['
   - Y
@@ -167,10 +167,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '&trans', h: LEFT SHIFT}
+  - {t: '&trans', h: LEFT ALT}
+  - {t: '&trans', h: LEFT CONTROL}
+  - {t: '&trans', h: LEFT GUI}
   - {t: ▽, type: trans}
   - LEFT ARROW
   - DOWN ARROW
@@ -180,8 +180,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '&trans', h: '&lmeh'}
+  - {t: '&trans', h: '&lhyp'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -273,8 +273,45 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  AutoNum: ['', '', '', '', '', '', '7', '8', '9', '', LEFT SHIFT, LEFT ALT, LEFT CONTROL, LEFT GUI, '', '', '4', '5', '6', '0', '', '', '', Alt+Ctl+LEFT SHIFT, Alt+Ctl+Gui+LEFT
-      SHIFT, '', '', '1', '2', '3', '', '', '', '', '', '0', BACKSPACE, DELETE]
+  AutoNum:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '7'
+  - '8'
+  - '9'
+  - {t: ▽, type: trans}
+  - {t: '&trans', h: LEFT SHIFT}
+  - {t: '&trans', h: LEFT ALT}
+  - {t: '&trans', h: LEFT CONTROL}
+  - {t: '&trans', h: LEFT GUI}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '4'
+  - '5'
+  - '6'
+  - '0'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '&trans', h: '&lmeh'}
+  - {t: '&trans', h: '&lhyp'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '1'
+  - '2'
+  - '3'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '0'
+  - BACKSPACE
+  - DELETE
   Fun:
   - ''
   - ''
