@@ -426,9 +426,9 @@
 
         macos_layer {
             bindings = <
-       &kp ESCAPE         &kp G        &lmeh 0 D     &lhyp 0 F    &kp B        &kp Z                    &rhyp 0 H            &rmeh 0 U      &kp O        &kp Q
+       &kp W              &kp G        &lmeh 0 D     &lhyp 0 F    &kp B        &kp Z                    &rhyp 0 H            &rmeh 0 U      &kp O        &kp Y
        &hml LEFT_SHIFT R  &hml LALT S  &hml LCTRL T  &hml LGUI N  &kp K        &kp J                    &hmr RGUI L          &hmr RCTRL E   &hmr RALT A  &hmr RIGHT_SHIFT I
-&kp W  &kp X              &kp C        &kp M         &kp P        &kp V        &mt LS(NUMBER_1) PERIOD  &mt LS(MINUS) COMMA  &kp SEMICOLON  &kp SQT      &kp LEFT_BRACKET    &kp Y
+&none  &kp X              &kp C        &kp M         &kp P        &kp V        &mt LS(NUMBER_1) PERIOD  &mt LS(MINUS) COMMA  &kp SEMICOLON  &kp SQT      &kp Q               &none
                                        &lt 8 ESCAPE  &lt 2 SPACE  &lt 5 F24    &lt 10 F24               &ss                  &lt 11 ENTER
             >;
 
