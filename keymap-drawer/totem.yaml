@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: totem}
 layers:
   MacOS:
-  - ESCAPE
+  - W
   - G
   - {t: D, h: '&meh'}
   - {t: F, h: '&hyper'}
@@ -10,7 +10,7 @@ layers:
   - {t: H, h: '&hyper'}
   - {t: U, h: '&meh'}
   - O
-  - Q
+  - Y
   - {t: R, h: LEFT SHIFT}
   - {t: S, h: LALT}
   - {t: T, h: LCTRL}
@@ -21,7 +21,7 @@ layers:
   - {t: E, h: RCTRL}
   - {t: A, h: RALT}
   - {t: I, h: RIGHT SHIFT}
-  - W
+  - ''
   - X
   - C
   - M
@@ -31,8 +31,8 @@ layers:
   - {t: ',', h: Sft+-}
   - ;
   - ''''
-  - '['
-  - Y
+  - Q
+  - ''
   - {t: ESCAPE, h: Fun}
   - {t: SPACE, h: Nav}
   - {t: F24, h: Num}
