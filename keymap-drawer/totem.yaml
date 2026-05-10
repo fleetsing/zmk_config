@@ -21,7 +21,7 @@ layers:
   - {t: E, h: RCTRL}
   - {t: A, h: RALT}
   - {t: I, h: RIGHT SHIFT}
-  - ''
+  - ESCAPE
   - X
   - C
   - M
@@ -32,7 +32,7 @@ layers:
   - ;
   - ''''
   - Q
-  - ''
+  - ENTER
   - {t: ESCAPE, h: Fun}
   - {t: SPACE, h: Nav}
   - {t: F24, h: Num}
