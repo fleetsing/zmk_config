@@ -590,5 +590,5 @@ combos:
   k: '&nav_word 4'
   l: [MacOS, pc]
 - p: [27, 29]
-  k: '&num_word 7'
+  k: '&num_word'
   l: [MacOS, pc, Nav, 'Nav ']
