@@ -426,10 +426,10 @@
 
         macos_layer {
             bindings = <
-       &kp W              &kp G        &lmeh 0 D     &lhyp 0 F    &kp B        &kp Z                    &rhyp 0 H            &rmeh 0 U      &kp O        &kp Y
-       &hml LEFT_SHIFT R  &hml LALT S  &hml LCTRL T  &hml LGUI N  &kp K        &kp J                    &hmr RGUI L          &hmr RCTRL E   &hmr RALT A  &hmr RIGHT_SHIFT I
-&kp W  &kp X              &kp C        &kp M         &kp P        &kp V        &mt LS(NUMBER_1) PERIOD  &mt LS(MINUS) COMMA  &kp SEMICOLON  &kp SQT      &kp Q               &kp Y
-                                       &lt 8 ESCAPE  &lt 2 SPACE  &lt 5 F24    &lt 10 F24               &lt 2 BACKSPACE      &lt 11 ENTER
+            &kp Q              &kp W        &lmeh 0 E     &lhyp 0 R    &kp T        &kp Y               &rhyp 0 U        &rmeh 0 I     &kp O        &kp P
+            &hml LEFT_SHIFT A  &hml LALT S  &hml LCTRL D  &hml LGUI F  &kp G        &kp H               &hmr RGUI J      &hmr RCTRL K  &hmr RALT L  &hmr RIGHT_SHIFT SEMI
+&kp ESCAPE  &kp Z              &kp X        &kp C         &kp V        &kp B        &mt LS(NUMBER_1) N  &mt LS(MINUS) M  &kp COMMA     &kp DOT      &kp SLASH              &kp APOS
+                                            &lt 8 ESCAPE  &lt 2 SPACE  &lt 5 F24    &lt 10 F24          &lt 2 BACKSPACE  &lt 11 ENTER
             >;
 
             label = "MacOS";
@@ -438,7 +438,7 @@
         pc_layer {
             bindings = <
         &trans  &trans  &trans           &trans               &trans    &trans  &trans                &trans            &trans  &trans
-        &trans  &trans  &hml LEFT_GUI T  &hml LEFT_CONTROL N  &trans    &trans  &hmr RIGHT_CONTROL L  &hmr RIGHT_GUI E  &trans  &trans
+        &trans  &trans  &hml LEFT_GUI D  &hml LEFT_CONTROL F  &trans    &trans  &hmr RIGHT_CONTROL J  &hmr RIGHT_GUI K  &trans  &trans
 &trans  &trans  &trans  &trans           &trans               &trans    &trans  &trans                &trans            &trans  &trans  &trans
                         &trans           &trans               &trans    &trans  &trans                &trans
             >;
