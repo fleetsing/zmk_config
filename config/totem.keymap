@@ -183,14 +183,6 @@
             require-prior-idle-ms = <200>;
             flavor = "tap-unless-interrupted";
         };
-
-        num_word: num_word {
-            compatible = "zmk,behavior-auto-layer";
-            #binding-cells = <1>;
-            continue-list = <N1 N2 N3 N4 N5 N6 N7 N8 N9 N0 ENTER SPACE BACKSPACE DELETE K_UNDO K_REDO>;
-            ignore-modifiers;
-            label = "NEW_BEHAVIOR";
-        };
     };
 
     /* Ported from fleetsing/zmk-config-old; old 3x5+3 bottom-row positions are shifted for Totem. */
