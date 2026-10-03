@@ -2,9 +2,9 @@
 
 This is the repo-local summary for the Totem `zmk_config` repository.
 
-When this repo is used inside the full local multi-repo workspace, the canonical project-level agent context is:
+When this repo is nested in the local workspace, the canonical project-level agent context is:
 
-- [../zmk_workspace/docs/project-context.md](../../zmk_workspace/docs/project-context.md)
+- [../docs/project-context.md](../../docs/project-context.md)
 
 ## Purpose
 
@@ -70,7 +70,7 @@ This repo is the day-to-day buildable ZMK user-config repo for the Totem keyboar
 
 ## Local build reminder
 
-Use the sibling workspace helper, from the `../zmk_workspace` repo root:
+Use the workspace helper, from the workspace root (`..`):
 
 ```bash
 ./scripts/build-local-firmware.sh all
@@ -82,7 +82,7 @@ ZMK_EXTRA_MODULES="/abs/path/to/module-one;/abs/path/to/module-two" ./scripts/bu
 ```
 
 That helper mirrors this repo into a disposable west workspace under `${TMPDIR:-/tmp}/zmk-local-build` by default, so local verification does not leave `.west/` state behind here.
-It also copies the finished UF2 files into `../zmk_workspace/artifacts/firmware/` by default so the flashing artifacts stay easy to reach.
+It also copies the finished UF2 files into `../artifacts/firmware/` by default so the flashing artifacts stay easy to reach.
 
 In restricted sessions, the first helper run needs network access so west can fetch the pinned dependencies into that disposable workspace. After the workspace has already been populated, `ZMK_SKIP_UPDATE=1` can be used for rebuilds without refetching.
 If the disposable virtualenv already has the required Python packages installed, `ZMK_SKIP_PIP=1` can also be used to skip pip refreshes in offline or network-restricted sessions.

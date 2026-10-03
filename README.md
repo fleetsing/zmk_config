@@ -23,10 +23,10 @@ This repository is the buildable ZMK user-config repo for the Totem keyboard.
 - project-wide agent docs
 - reusable out-of-tree behaviors, drivers, or shield logic
 
-Those belong in sibling repos:
+Those belong in the `zmk_workspace` repo, which this repo is nested in locally, and its other nested repos:
 
+- `..` (the `zmk_workspace` root)
 - `../zmk`
-- `../zmk_workspace`
 - `../zmk_modules/*`
 
 ## Tooling
@@ -47,14 +47,14 @@ Those belong in sibling repos:
 
 ## Local verification
 
-When this repo is part of the full local workspace, run local firmware builds from `../zmk_workspace`:
+When this repo is nested in the local workspace, run local firmware builds from the workspace root:
 
 ```bash
-cd ../zmk_workspace
+cd ..
 ./scripts/build-local-firmware.sh all
 ```
 
-That keeps disposable west state out of this repository and copies the flashable UF2 files into `../zmk_workspace/artifacts/firmware/`.
+That keeps disposable west state out of this repository and copies the flashable UF2 files into `../artifacts/firmware/`.
 
 Useful variants:
 
@@ -77,4 +77,4 @@ ZMK_SKIP_UPDATE=1 ZMK_SKIP_PIP=1 ./scripts/build-local-firmware.sh all
 
 ## Note
 
-When working in the full local multi-repo setup, the canonical project-level context lives in [../zmk_workspace/docs/project-context.md](../zmk_workspace/docs/project-context.md).
+When working in the local workspace, the canonical project-level context lives in [../docs/project-context.md](../docs/project-context.md).
