@@ -1,38 +1,38 @@
 layout: {zmk_keyboard: totem}
 layers:
   MacOS:
+  - Q
   - W
-  - G
-  - {t: D, h: '&meh'}
-  - {t: F, h: '&hyper'}
-  - B
-  - Z
-  - {t: H, h: '&hyper'}
-  - {t: U, h: '&meh'}
-  - O
+  - {t: E, h: '&meh'}
+  - {t: R, h: '&hyper'}
+  - T
   - Y
-  - {t: R, h: LEFT SHIFT}
+  - {t: U, h: '&hyper'}
+  - {t: I, h: '&meh'}
+  - O
+  - P
+  - {t: A, h: LEFT SHIFT}
   - {t: S, h: LALT}
-  - {t: T, h: LCTRL}
-  - {t: N, h: LGUI}
-  - K
-  - J
-  - {t: L, h: RGUI}
-  - {t: E, h: RCTRL}
-  - {t: A, h: RALT}
-  - {t: I, h: RIGHT SHIFT}
-  - W
+  - {t: D, h: LCTRL}
+  - {t: F, h: LGUI}
+  - G
+  - H
+  - {t: J, h: RGUI}
+  - {t: K, h: RCTRL}
+  - {t: L, h: RALT}
+  - {t: ;, h: RIGHT SHIFT}
+  - ESCAPE
+  - Z
   - X
   - C
-  - M
-  - P
   - V
-  - {t: ., h: Sft+1}
-  - {t: ',', h: Sft+-}
-  - ;
+  - B
+  - {t: N, h: Sft+1}
+  - {t: M, h: Sft+-}
+  - ','
+  - .
+  - /
   - ''''
-  - Q
-  - Y
   - {t: ESCAPE, h: Fun}
   - {t: SPACE, h: Nav}
   - {t: F24, h: Num}
@@ -52,12 +52,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: T, h: LEFT GUI}
-  - {t: N, h: LEFT CONTROL}
+  - {t: D, h: LEFT GUI}
+  - {t: F, h: LEFT CONTROL}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: L, h: RIGHT CONTROL}
-  - {t: E, h: RIGHT GUI}
+  - {t: J, h: RIGHT CONTROL}
+  - {t: K, h: RIGHT GUI}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
