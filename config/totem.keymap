@@ -426,10 +426,10 @@
 
         macos_layer {
             bindings = <
-            &kp Q              &kp W        &lmeh 0 E     &lhyp 0 R    &kp T        &kp Y               &rhyp 0 U        &rmeh 0 I     &kp O        &kp P
-            &hml LEFT_SHIFT A  &hml LALT S  &hml LCTRL D  &hml LGUI F  &kp G        &kp H               &hmr RGUI J      &hmr RCTRL K  &hmr RALT L  &hmr RIGHT_SHIFT SEMI
-&kp ESCAPE  &kp Z              &kp X        &kp C         &kp V        &kp B        &mt LS(NUMBER_1) N  &mt LS(MINUS) M  &kp COMMA     &kp DOT      &kp SLASH              &kp APOS
-                                            &lt 8 ESCAPE  &lt 2 SPACE  &lt 5 F24    &lt 10 F24          &lt 2 BACKSPACE  &lt 11 ENTER
+            &kp Q              &kp W        &lmeh 0 E     &lhyp 0 R    &kp T          &kp Y               &rhyp 0 U         &rmeh 0 I     &kp O        &kp P
+            &hml LEFT_SHIFT A  &hml LALT S  &hml LCTRL D  &hml LGUI F  &kp G          &kp H               &hmr RGUI J       &hmr RCTRL K  &hmr RALT L  &hmr RIGHT_SHIFT SEMI
+&kp ESCAPE  &kp Z              &kp X        &kp C         &kp V        &kp B          &mt LS(NUMBER_1) N  &mt LS(MINUS) M   &kp COMMA     &kp DOT      &kp SLASH              &kp APOS
+                                            &lt 8 TAB     &lt 5 ENTER  &lt 2 SPACE    &ss                 &lt 10 BACKSPACE  &mo 11
             >;
 
             label = "MacOS";
@@ -446,10 +446,10 @@
 
         nav_layer {
             bindings = <
-       &none                &none              &lmeh 0 LG(LS(Z))      &lhyp 0 LG(Z)      &none              &none     &kp PG_DN      &kp PG_UP   &kp INSERT  &none
-       &hml LEFT_SHIFT F16  &hml LEFT_ALT F15  &hml LEFT_CONTROL F14  &hml LEFT_GUI F13  &kp PRINTSCREEN    &kp LEFT  &kp DOWN       &kp UP      &kp RIGHT   &none
-&none  &none                &kp LG(X)          &kp LG(C)              &kp LG(V)          &none              &none     &kp END        &kp HOME    &none       &none  &none
-                                               &kp LS(TAB)            &none              &kp TAB            &none     &kp BACKSPACE  &kp DELETE
+            &none                &none              &lmeh 0 LG(LS(Z))      &lhyp 0 LG(Z)      &none              &none     &kp PG_DN   &kp PG_UP  &kp INSERT  &none
+            &hml LEFT_SHIFT F16  &hml LEFT_ALT F15  &hml LEFT_CONTROL F14  &hml LEFT_GUI F13  &kp PRINTSCREEN    &kp LEFT  &kp DOWN    &kp UP     &kp RIGHT   &none
+&kp ESCAPE  &none                &kp LG(X)          &kp LG(C)              &kp LG(V)          &none              &none     &kp END     &kp HOME   &none       &none  &none
+                                                    &kp TAB                &kp ENTER          &none              &none     &kp DELETE  &to 0
             >;
 
             label = "Nav";
@@ -468,10 +468,10 @@
 
         autonav_layer {
             bindings = <
-        &trans             &trans           &mehht 0 0           &hypht 0 0       &trans     &trans          &trans          &trans        &trans           &trans
-        &mht LEFT_SHIFT 0  &mht LEFT_ALT 0  &mht LEFT_CONTROL 0  &mht LEFT_GUI 0  &trans     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
-&trans  &trans             &trans           &trans               &trans           &trans     &trans          &trans          &trans        &trans           &trans  &trans
-                                            &kp LS(TAB)          &trans           &kp TAB    &trans          &kp BACKSPACE   &kp DELETE
+        &trans             &trans           &mehht 0 0           &hypht 0 0       &trans    &trans          &trans          &trans        &trans           &trans
+        &mht LEFT_SHIFT 0  &mht LEFT_ALT 0  &mht LEFT_CONTROL 0  &mht LEFT_GUI 0  &trans    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &trans             &trans           &trans               &trans           &trans    &trans          &trans          &trans        &trans           &trans  &trans
+                                            &kp TAB              &kp ENTER        &none     &trans          &kp DELETE      &to 0
             >;
 
             label = "AutoNav";
@@ -479,10 +479,10 @@
 
         num_layer {
             bindings = <
-       &none           &none         &kp LA(LC(LEFT_SHIFT))  &kp LA(LC(LG(LEFT_SHIFT)))  &none    &none   &kp N7         &kp N8      &kp N9  &none
-       &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL        &kp LEFT_GUI                &none    &none   &kp N4         &kp N5      &kp N6  &kp N0
-&none  &none           &none         &none                   &none                       &none    &none   &kp N1         &kp N2      &kp N3  &none   &none
-                                     &none                   &none                       &none    &kp N0  &kp BACKSPACE  &kp DELETE
+       &none           &none         &kp LA(LC(LEFT_SHIFT))  &kp LA(LC(LG(LEFT_SHIFT)))  &none    &none   &kp N7         &kp N8  &kp N9  &none
+       &kp LEFT_SHIFT  &kp LEFT_ALT  &kp LEFT_CONTROL        &kp LEFT_GUI                &none    &none   &kp N4         &kp N5  &kp N6  &kp N0
+&none  &none           &none         &none                   &none                       &none    &none   &kp N1         &kp N2  &kp N3  &none   &none
+                                     &none                   &none                       &none    &kp N0  &kp BACKSPACE  &to 0
             >;
 
             label = "Num";
@@ -499,10 +499,10 @@
 
         autonum_layer {
             bindings = <
-        &trans             &trans           &mehht 0 0           &hypht 0 0       &trans    &trans  &kp N7         &kp N8      &kp N9  &trans
-        &mht LEFT_SHIFT 0  &mht LEFT_ALT 0  &mht LEFT_CONTROL 0  &mht LEFT_GUI 0  &trans    &trans  &kp N4         &kp N5      &kp N6  &kp N0
-&trans  &trans             &trans           &trans               &trans           &trans    &trans  &kp N1         &kp N2      &kp N3  &trans  &trans
-                                            &trans               &trans           &trans    &kp N0  &kp BACKSPACE  &kp DELETE
+        &trans             &trans           &mehht 0 0           &hypht 0 0       &trans    &trans  &kp N7         &kp N8  &kp N9  &trans
+        &mht LEFT_SHIFT 0  &mht LEFT_ALT 0  &mht LEFT_CONTROL 0  &mht LEFT_GUI 0  &trans    &trans  &kp N4         &kp N5  &kp N6  &kp N0
+&trans  &trans             &trans           &trans               &trans           &trans    &trans  &kp N1         &kp N2  &kp N3  &trans  &trans
+                                            &trans               &trans           &trans    &kp N0  &kp BACKSPACE  &to 0
             >;
 
             label = "AutoNum";
