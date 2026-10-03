@@ -15,6 +15,7 @@
 - `docs/battery-monitoring.md`
 
 If this repo is part of the local multi-repo workspace, read `../zmk_workspace/docs/project-context.md` first for the project-wide operating model.
+Shared agent skills live in `../zmk_workspace/.agents/skills/`, so prefer starting agent sessions from `zmk_workspace`. This file and the docs it lists apply to every coding agent; keep tool-specific folders out of this repo unless a tool needs repo-local settings.
 
 ## Repo rules
 - `config/totem.keymap` is the editor-safe keymap surface.

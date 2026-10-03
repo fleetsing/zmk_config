@@ -73,8 +73,8 @@ ZMK_SKIP_UPDATE=1 ZMK_SKIP_PIP=1 ./scripts/build-local-firmware.sh all
 
 ## Host-side status apps
 
-- Battery monitoring notes for the current macOS setup live in [docs/battery-monitoring.md](/Users/jarnolouhelainen/Projects/keyboards/zmk/zmk_config/docs/battery-monitoring.md).
+- Battery monitoring notes for the current macOS setup live in [docs/battery-monitoring.md](docs/battery-monitoring.md).
 
 ## Note
 
-When working in the full local multi-repo setup, the canonical project-level context lives in [../zmk_workspace/docs/project-context.md](/Users/jarnolouhelainen/Projects/keyboards/zmk/zmk_workspace/docs/project-context.md).
+When working in the full local multi-repo setup, the canonical project-level context lives in [../zmk_workspace/docs/project-context.md](../zmk_workspace/docs/project-context.md).
