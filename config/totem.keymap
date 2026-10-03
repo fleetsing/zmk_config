@@ -421,7 +421,7 @@
         };
 
         combo_num_layer {
-            bindings = <&num_word>;
+            bindings = <&num_word 7>;
             key-positions = <27 29>;
             timeout-ms = <28>;
             require-prior-idle-ms = <140>;
