@@ -33,12 +33,12 @@ layers:
   - .
   - /
   - ''''
-  - {t: ESCAPE, h: Fun}
+  - {t: TAB, h: Fun}
+  - {t: ENTER, h: Num}
   - {t: SPACE, h: Nav}
-  - {t: F24, h: Num}
-  - {t: F24, h: media}
-  - {t: BACKSPACE, h: Nav}
-  - {t: ENTER, h: mouse}
+  - '&ss'
+  - {t: BACKSPACE, h: media}
+  - mouse
   pc:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -99,7 +99,7 @@ layers:
   - UP
   - RIGHT
   - ''
-  - ''
+  - ESCAPE
   - ''
   - Gui+X
   - Gui+C
@@ -111,12 +111,12 @@ layers:
   - ''
   - ''
   - ''
-  - Sft+TAB
-  - {type: held}
   - TAB
+  - ENTER
+  - {type: held}
   - ''
-  - BACKSPACE
   - DELETE
+  - {t: MacOS, h: toggle}
   'Nav ':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -151,8 +151,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
   - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -189,12 +189,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Sft+TAB
-  - {t: ▽, type: trans}
   - TAB
+  - ENTER
+  - ''
   - {t: ▽, type: trans}
-  - BACKSPACE
   - DELETE
+  - {t: MacOS, h: toggle}
   Num:
   - ''
   - ''
@@ -229,11 +229,11 @@ layers:
   - ''
   - ''
   - ''
-  - ''
   - {type: held}
+  - ''
   - '0'
   - BACKSPACE
-  - DELETE
+  - {t: MacOS, h: toggle}
   pc_num:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -268,8 +268,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -311,7 +311,7 @@ layers:
   - {t: ▽, type: trans}
   - '0'
   - BACKSPACE
-  - DELETE
+  - {t: MacOS, h: toggle}
   Fun:
   - ''
   - ''
@@ -426,8 +426,8 @@ layers:
   - ''
   - ''
   - ''
-  - {type: held}
   - ''
+  - {type: held}
   - ''
   mouse:
   - ''
