@@ -426,10 +426,10 @@
 
         macos_layer {
             bindings = <
-            &kp Q              &kp W        &lmeh 0 E     &lhyp 0 R    &kp T          &kp Y               &rhyp 0 U         &rmeh 0 I     &kp O        &kp P
-            &hml LEFT_SHIFT A  &hml LALT S  &hml LCTRL D  &hml LGUI F  &kp G          &kp H               &hmr RGUI J       &hmr RCTRL K  &hmr RALT L  &hmr RIGHT_SHIFT SEMI
-&kp ESCAPE  &kp Z              &kp X        &kp C         &kp V        &kp B          &mt LS(NUMBER_1) N  &mt LS(MINUS) M   &kp COMMA     &kp DOT      &kp SLASH              &kp APOS
-                                            &lt 8 TAB     &lt 5 ENTER  &lt 2 SPACE    &ss                 &lt 10 BACKSPACE  &mo 11
+            &kp Q              &kp W        &lmeh 0 E     &lhyp 0 R    &kp T          &kp Y  &rhyp 0 U         &rmeh 0 I     &kp O        &kp P
+            &hml LEFT_SHIFT A  &hml LALT S  &hml LCTRL D  &hml LGUI F  &kp G          &kp H  &hmr RGUI J       &hmr RCTRL K  &hmr RALT L  &hmr RIGHT_SHIFT SEMI
+&kp ESCAPE  &kp Z              &kp X        &kp C         &kp V        &kp B          &kp N  &kp M             &kp COMMA     &kp DOT      &kp SLASH              &kp APOS
+                                            &lt 8 TAB     &lt 5 ENTER  &lt 2 SPACE    &ss    &lt 10 BACKSPACE  &mo 11
             >;
 
             label = "MacOS";
