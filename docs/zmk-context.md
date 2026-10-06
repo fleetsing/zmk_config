@@ -38,7 +38,7 @@ This repo is the day-to-day buildable ZMK user-config repo for the Totem keyboar
 - The keymap keeps its custom behavior definitions inline today:
   `Meh` and `Hyper` macros, six positional hold-tap helpers for left/right home-row mods and left/right bottom-row `Meh`/`Hyper`, `lts`, `ss`, `htc`, `nav_word`, and the transparent-hold helpers `mht`, `hypht`, and `mehht`.
 - The hold-tap tuning is now role-specific:
-  the home-row and bottom-row modifiers use `balanced`, `quick-tap-ms = 175`, `require-prior-idle-ms = 150`, `retro-tap`, and `hold-trigger-on-release`, while `htc` and the transparent-hold helpers use tighter combo-oriented tuning.
+  the home-row and bottom-row modifiers use `balanced`, `quick-tap-ms = 300`, `require-prior-idle-ms = 150`, `retro-tap`, and `hold-trigger-on-release`, while `htc` and the transparent-hold helpers use tighter combo-oriented tuning. The thumb `&lt` keys override the ZMK default with `quick-tap-ms = 300` so double-tap-and-hold repeats the tap key.
 - Dedicated `Media`, `Mouse`, and `Board` layers cover media controls, pointer actions, and Bluetooth/output management.
 - `config/totem_left.conf` now carries the central-side BLE battery reporting settings used for host-side monitoring apps in addition to disabling USB logging.
 - `config/totem_right.conf` disables USB and the USB device stack for the peripheral half.

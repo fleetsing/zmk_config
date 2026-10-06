@@ -44,7 +44,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
+            quick-tap-ms = <300>;
             require-prior-idle-ms = <150>;
             retro-tap;
             bindings = <&kp>, <&kp>;
@@ -58,7 +58,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
+            quick-tap-ms = <300>;
             require-prior-idle-ms = <150>;
             retro-tap;
             bindings = <&kp>, <&kp>;
@@ -72,7 +72,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
+            quick-tap-ms = <300>;
             require-prior-idle-ms = <150>;
             retro-tap;
             bindings = <&meh>, <&kp>;
@@ -86,7 +86,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
+            quick-tap-ms = <300>;
             require-prior-idle-ms = <150>;
             retro-tap;
             bindings = <&hyper>, <&kp>;
@@ -100,7 +100,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
+            quick-tap-ms = <300>;
             require-prior-idle-ms = <150>;
             retro-tap;
             bindings = <&hyper>, <&kp>;
@@ -114,7 +114,7 @@
             #binding-cells = <2>;
             flavor = "balanced";
             tapping-term-ms = <280>;
-            quick-tap-ms = <175>;
+            quick-tap-ms = <300>;
             require-prior-idle-ms = <150>;
             retro-tap;
             bindings = <&meh>, <&kp>;
@@ -576,6 +576,13 @@
             then-layer = <9>;
         };
     };
+};
+
+/* Double-tap and hold a thumb layer-tap repeats its tap key (space/backspace/enter)
+ * instead of activating the layer, mirroring the home-row quick-tap window. */
+
+&lt {
+    quick-tap-ms = <300>;
 };
 
 &num_word {
