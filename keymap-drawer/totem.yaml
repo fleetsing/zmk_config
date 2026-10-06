@@ -112,8 +112,8 @@ layers:
   - ''
   - ''
   - TAB
-  - ENTER
-  - {type: held}
+  - SPACE
+  - {t: ENTER, type: held}
   - ''
   - DELETE
   - {t: MacOS, h: toggle}
@@ -159,18 +159,18 @@ layers:
   AutoNav:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '&trans', h: '&lmeh'}
-  - {t: '&trans', h: '&lhyp'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '&trans', h: LEFT SHIFT}
-  - {t: '&trans', h: LEFT ALT}
-  - {t: '&trans', h: LEFT CONTROL}
-  - {t: '&trans', h: LEFT GUI}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - LEFT ARROW
   - DOWN ARROW
@@ -189,11 +189,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - TAB
-  - ENTER
-  - ''
   - {t: ▽, type: trans}
-  - DELETE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: MacOS, h: toggle}
   Num:
   - ''
@@ -276,18 +276,18 @@ layers:
   AutoNum:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '&trans', h: '&lmeh'}
-  - {t: '&trans', h: '&lhyp'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '7'
   - '8'
   - '9'
   - {t: ▽, type: trans}
-  - {t: '&trans', h: LEFT SHIFT}
-  - {t: '&trans', h: LEFT ALT}
-  - {t: '&trans', h: LEFT CONTROL}
-  - {t: '&trans', h: LEFT GUI}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '4'
@@ -309,8 +309,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '0'
-  - BACKSPACE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: MacOS, h: toggle}
   Fun:
   - ''
