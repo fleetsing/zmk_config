@@ -34,8 +34,8 @@ layers:
   - /
   - ''''
   - {t: TAB, h: Fun}
-  - {t: ENTER, h: Num}
-  - {t: SPACE, h: Nav}
+  - {t: SPACE, h: Num}
+  - {t: ENTER, h: Nav}
   - '&ss'
   - {t: BACKSPACE, h: media}
   - mouse
