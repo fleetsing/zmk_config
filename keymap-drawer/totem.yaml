@@ -27,8 +27,8 @@ layers:
   - C
   - V
   - B
-  - {t: N, h: Sft+1}
-  - {t: M, h: Sft+-}
+  - N
+  - M
   - ','
   - .
   - /
